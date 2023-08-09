@@ -14,24 +14,26 @@ class User(AbstractUser):
     """
 
     username = None
-    email = models.EmailField(
+    chat_id = models.IntegerField(
+        verbose_name="chat_id",
         unique=True,
-        verbose_name='почта')
+        **NULLABLE
+    )
+    email = models.EmailField(
+        # unique=True,
+        verbose_name='почта'
+    )
     phone = models.CharField(
         max_length=35,
         verbose_name='телефон',
-        **NULLABLE)
-    # chat_id = models.IntegerField(
-    #     verbose_name="chat_id",
-    #     **NULLABLE)
-    # is_subscripted = models.BooleanField(
-    #     verbose_name="Подписан",
-    #     default=False)
+        **NULLABLE
+    )
+    is_subscripted = models.BooleanField(
+        verbose_name="Подписан",
+        default=False)
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = 'chat_id'
     REQUIRED_FIELDS = []
 
     def __str__(self):
-        return f"{self.email}"
-
-
+        return f"{self.chat_id}"

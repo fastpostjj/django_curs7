@@ -1,5 +1,0 @@
-from config.settings import BOT_URL, bot_token
-
-
-def print_url(*args, **kwargs):
-    print(f'{BOT_URL}{bot_token}/getMe')

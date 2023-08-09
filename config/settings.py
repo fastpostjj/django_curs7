@@ -46,11 +46,11 @@ INSTALLED_APPS = [
     'drf_yasg',
     'rest_framework_simplejwt',
     'django_celery_beat',
+    'django_filters',
 
     "user_auth",
     'habits',
 
-    # 'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -246,20 +246,20 @@ LOGGING = {
 BOT_URL='https://api.telegram.org/bot'#<YOUR_BOT_TOKEN>/getMe
 
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
-#     # Настройки JWT-токенов
-#     'DEFAULT_AUTHENTICATION_CLASSES': [
-#         'rest_framework_simplejwt.authentication.JWTAuthentication',
-#     ],
-#     # Закрыть все эндпоинты авторизацией
-#     'DEFAULT_PERMISSION_CLASSES': [
-#         'rest_framework.permissions.IsAuthenticated',
-#     ],
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    # Настройки JWT-токенов
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    # Закрыть все эндпоинты авторизацией
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
 
-# # Настройки срока действия токенов
-# SIMPLE_JWT = {
-#     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15000),
-#     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-# }
+# Настройки срока действия токенов
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15000),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+}

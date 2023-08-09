@@ -9,22 +9,33 @@ from user_auth.models import User
 class UserAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'email',
+        'chat_id',
+        'first_name',
+        'last_name',
+        # 'email',
+        'is_subscripted',
         'phone',
         'is_active'
     )
+
     list_display_links = (
         'id',
-        'email',
+        'chat_id',
+        # 'email',
+        'is_subscripted',
         'phone'
     )
     list_filter = (
         'id',
-        'email',
+        'chat_id',
+        # 'email',
+        'is_subscripted',
         'phone'
     )
     search_fields = (
         'id',
-        'email',
+        'chat_id',
+        # 'email',
+        'is_subscripted',
         'phone'
     )

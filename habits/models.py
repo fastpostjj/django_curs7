@@ -28,39 +28,40 @@ from user_auth.models import User
 """
 
 
-class TelegramUser(models.Model):
+# class TelegramUser(models.Model):
 
-    """
-    chat_id
-    phone
-    is_subscripted
-    """
+#     """
+#     chat_id
+#     phone
+#     is_subscripted
+#     """
 
-    # username = None
-    chat_id = models.IntegerField(
-        verbose_name="chat_id",
-        **NULLABLE)
-    phone = models.CharField(
-        max_length=35,
-        verbose_name='телефон',
-        **NULLABLE)
-    is_subscripted = models.BooleanField(
-        verbose_name="Подписан",
-        default=False)
+#     # username = None
+#     chat_id = models.IntegerField(
+#         verbose_name="chat_id",
+#         **NULLABLE)
+#     phone = models.CharField(
+#         max_length=35,
+#         verbose_name='телефон',
+#         **NULLABLE)
+#     is_subscripted = models.BooleanField(
+#         verbose_name="Подписан",
+#         default=False)
 
-    # USERNAME_FIELD = 'chat_id'
-    # REQUIRED_FIELDS = []
+#     # USERNAME_FIELD = 'chat_id'
+#     # REQUIRED_FIELDS = []
 
-    def __str__(self):
-        return f"chat_id={self.chat_id}"
+#     def __str__(self):
+#         return f"chat_id={self.chat_id}"
 
-    class Meta:
-        verbose_name = 'пользователь телеграма'
-        verbose_name_plural = 'пользователи телеграма'
+#     class Meta:
+#         verbose_name = 'пользователь телеграма'
+#         verbose_name_plural = 'пользователи телеграма'
 
 
 class Habits(models.Model):
     """
+    Абстрактный класс для описания модели привычки.
     Модель привычки-конкретное действие, которое можно уложить в одно предложение:
 
     я буду [ДЕЙСТВИЕ] в [ВРЕМЯ] в [МЕСТО]
@@ -113,29 +114,18 @@ class Habits(models.Model):
         verbose_name="Время на выполнение",
         default=timedelta(seconds=120)
     )
-    is_pleasant = models.CharField(
-        verbose_name='Приятная/полезная привычка',
-        max_length=11,
-        choices=[
-            ('is_pleasant', 'приятная'),
-            ('is_useful', 'полезная')
-        ],
-        default='is_useful'
-    )
+    # is_pleasant = models.CharField(
+    #     verbose_name='Приятная/полезная привычка',
+    #     max_length=11,
+    #     choices=[
+    #         ('is_pleasant', 'приятная'),
+    #         ('is_useful', 'полезная')
+    #     ],
+    #     default='is_useful'
+    # )
     is_public = models.BooleanField(
         verbose_name='Публичная',
         default=False
-    )
-    compensation = models.CharField(
-        verbose_name="Вознаграждение за полезную привычку",
-        max_length=200,
-        **NULLABLE
-    )
-    linked_habit = models.ForeignKey(
-        'self',
-        verbose_name="Связанная приятная привычка",
-        on_delete=models.SET_NULL,
-        **NULLABLE
     )
 
     def __repr__(self) -> str:
@@ -147,6 +137,36 @@ class Habits(models.Model):
         return f'я буду {self.activity} в {time} в {self.place}'
 
     class Meta:
-        verbose_name = 'привычка'
-        verbose_name_plural = 'привычки'
+        abstract=True
+
+
+class Habits_pleasant(Habits):
+    """
+    Класс полезных привычек.
+    """
+    class Meta:
+        verbose_name = 'приятная привычка'
+        verbose_name_plural = 'приятные привычки'
         unique_together = ('user', 'place', 'period', 'activity')
+
+
+class Habits_useful(Habits):
+    """
+    Класс полезных привычек.
+    """
+    compensation = models.CharField(
+        verbose_name="Вознаграждение за полезную привычку",
+        max_length=200,
+        **NULLABLE
+    )
+    linked_habit = models.ForeignKey(
+        Habits_pleasant,
+        related_name='pleasant_habit',
+        verbose_name="Связанная приятная привычка",
+        on_delete=models.SET_NULL,
+        **NULLABLE
+    )
+
+    class Meta:
+        verbose_name = 'полезная привычка'
+        verbose_name_plural = 'полезные привычки'
