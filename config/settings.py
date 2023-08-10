@@ -148,7 +148,7 @@ TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -160,7 +160,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 
 STATIC_URL = 'static/'
 
@@ -218,8 +217,8 @@ CELERY_TASK_TIME_LIMIT = 30 * 60
 # Настройки для Celery
 CELERY_BEAT_SCHEDULE = {
     'task-name': {
-        # 'task': 'payments.tasks.check_status_payment',  # Путь к задаче
-        'schedule': timedelta(minutes=10),  # Расписание выполнения задачи (например, каждые 10 минут)
+        'task': 'habits.check_message_bot',  # Путь к задаче
+        'schedule': timedelta(minutes=10),  # Расписание выполнения задачи (каждые 10 минут)
     },
 }
 
@@ -243,7 +242,7 @@ LOGGING = {
     },
 }
 
-BOT_URL='https://api.telegram.org/bot'#<YOUR_BOT_TOKEN>/getMe
+BOT_URL='https://api.telegram.org/bot'
 
 
 REST_FRAMEWORK = {
@@ -263,3 +262,5 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15000),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
+# current_dir = os.getcwd()
+# print("Текущая директория:", current_dir)

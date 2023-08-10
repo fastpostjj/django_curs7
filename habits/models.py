@@ -59,7 +59,7 @@ from user_auth.models import User
 #         verbose_name_plural = 'пользователи телеграма'
 
 
-class Habits(models.Model):
+class Habits_abstract(models.Model):
     """
     Абстрактный класс для описания модели привычки.
     Модель привычки-конкретное действие, которое можно уложить в одно предложение:
@@ -72,7 +72,10 @@ class Habits(models.Model):
     Действие — действие, которое представляет из себя привычка.
     user
     place
+
     time
+
+    datetime_start
     activity
     period
     is_pleasant
@@ -94,6 +97,12 @@ class Habits(models.Model):
     time = models.TimeField(
         verbose_name="Время"
     )
+    datetime_start = models.DateTimeField(
+        verbose_name="Дата и время начала рассылки",
+        auto_now=True,
+        **NULLABLE
+    )
+
     place = models.CharField(
         verbose_name="Место",
         max_length=150,
@@ -114,45 +123,46 @@ class Habits(models.Model):
         verbose_name="Время на выполнение",
         default=timedelta(seconds=120)
     )
-    # is_pleasant = models.CharField(
-    #     verbose_name='Приятная/полезная привычка',
-    #     max_length=11,
-    #     choices=[
-    #         ('is_pleasant', 'приятная'),
-    #         ('is_useful', 'полезная')
-    #     ],
-    #     default='is_useful'
-    # )
+    is_pleasant = models.BooleanField(
+        verbose_name="Приятная привычка",
+        default=False
+    )
+
     is_public = models.BooleanField(
         verbose_name='Публичная',
         default=False
     )
 
+    last_time_send = models.DateTimeField(
+        verbose_name="Дата и время последней отправки привычки",
+        **NULLABLE
+    )
+
     def __repr__(self) -> str:
         time = self.time.strftime('%H:%M')
-        return f'я буду {self.activity} в {time} в {self.place}'
+        return f'я буду {self.activity} в {time} в {self.place}, время :{self.time_for_action}'
 
     def __str__(self) -> str:
         time = self.time.strftime('%H:%M')
-        return f'я буду {self.activity} в {time} в {self.place}'
+        return f'я буду {self.activity} в {time} в {self.place}, время :{self.time_for_action}'
 
     class Meta:
         abstract=True
 
 
-class Habits_pleasant(Habits):
-    """
-    Класс полезных привычек.
-    """
-    class Meta:
-        verbose_name = 'приятная привычка'
-        verbose_name_plural = 'приятные привычки'
-        unique_together = ('user', 'place', 'period', 'activity')
+# class Habits_pleasant(Habits):
+#     """
+#     Класс полезных привычек.
+#     """
+#     class Meta:
+#         verbose_name = 'приятная привычка'
+#         verbose_name_plural = 'приятные привычки'
+#         unique_together = ('user', 'place', 'period', 'activity')
 
 
-class Habits_useful(Habits):
+class Habits(Habits_abstract):
     """
-    Класс полезных привычек.
+    Класс привычек.
     """
     compensation = models.CharField(
         verbose_name="Вознаграждение за полезную привычку",
@@ -160,13 +170,43 @@ class Habits_useful(Habits):
         **NULLABLE
     )
     linked_habit = models.ForeignKey(
-        Habits_pleasant,
-        related_name='pleasant_habit',
+        'self',
+        # related_name='pleasant_habit',
         verbose_name="Связанная приятная привычка",
         on_delete=models.SET_NULL,
         **NULLABLE
     )
 
     class Meta:
-        verbose_name = 'полезная привычка'
-        verbose_name_plural = 'полезные привычки'
+        verbose_name = 'привычка'
+        verbose_name_plural = 'привычки'
+
+
+class BotMessages(models.Model):
+    """
+    Сообщения пользователей, полученные от бота
+    message_id
+    message_text
+    user
+    """
+    message_id = models.IntegerField(
+        verbose_name="id сообщения"
+    )
+    message_text = models.CharField(
+        verbose_name="текст сообщения",
+        max_length=300,
+        **NULLABLE
+    )
+    user = models.ForeignKey(
+        User,
+        verbose_name="пользователь",
+        on_delete=models.SET_NULL,
+        **NULLABLE
+    )
+
+    def __str__(self):
+        return f"id:{self.message_id} {self.message_text} {self.user}"
+
+    class Meta:
+        verbose_name = 'сообщение'
+        verbose_name_plural = 'сообщения'

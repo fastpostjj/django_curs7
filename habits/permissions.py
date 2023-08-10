@@ -1,42 +1,54 @@
 from rest_framework.permissions import BasePermission
 
 # from university.models import Lesson, Curs, Subscription
-from habits.models import Habits_pleasant, Habits_useful
+from habits.models import Habits
 
 
-class OwnerOrStaffOrAdminPleasant(BasePermission):
-    # проверка для приятных привычек
+class OwnerOrStaffOrAdminHabits(BasePermission):
+    # проверка привычек
 
     def has_permission(self, request, view):
-        pass
-        if request.method == 'GET':
+        if request.method in ['GET', 'PUT', 'PATCH']:
             # для списка не проверяем владельца
             if request.user.is_staff or request.user.is_superuser:
                 return True
             elif 'pk' in view.kwargs:
                 # это не список
-                habits_pleasant_id = view.kwargs['pk']
-                habits_pleasant = Habits_pleasant.objects.get(id=habits_pleasant_id)
-                if request.user == Habits_pleasant.user:
-                    return True
-        return False
-
-
-class OwnerOrStaffOrAdminUseful(BasePermission):
-    # проверка для полезных привычек
-
-    def has_permission(self, request, view):
-        if request.method == 'GET':
-            # для списка не проверяем владельца
+                try:
+                    habits_id = view.kwargs['pk']
+                    habits = Habits.objects.get(id=habits_id)
+                    if request.user == habits.user:
+                        return True
+                    else:
+                        return False
+                except Habits.DoesNotExist:
+                    return False
+        elif request.method in ['DELETE']:
             if request.user.is_staff or request.user.is_superuser:
                 return True
             elif 'pk' in view.kwargs:
                 # это не список
-                habits_useful_id = view.kwargs['pk']
-                habits_useful = Habits_useful.objects.get(id=habits_useful_id)
-                if request.user == Habits_useful.user:
-                    return True
+                try:
+                    habits_id = view.kwargs['pk']
+                    habits = Habits.objects.get(id=habits_id)
+                    if request.user == habits.user:
+                        return True
+                    else:
+                        return False
+                except Habits.DoesNotExist:
+                    return False
+
         return False
+
+        # elif request.method in ['PUT', 'PATCH']:
+        #     if request.user.is_staff or request.user.is_superuser:
+        #         return True
+        #     elif 'pk' in view.kwargs:
+        #         habits_id = view.kwargs['pk']
+        #         habits = Habits.objects.get(id=habits_id)
+        #         if request.user == habits.user:
+        #             return True
+        # return False
 
 
 # class OwnerOrAdmin(BasePermission):
@@ -49,7 +61,7 @@ class OwnerOrStaffOrAdminUseful(BasePermission):
 #         return False
 
 
-class OwnerOrStafOrAdminView(BasePermission):
+class OwnerOrStaffOrAdmin(BasePermission):
     def has_object_permission(self, request, view, obj):
         if request.user == obj.user:
             return True

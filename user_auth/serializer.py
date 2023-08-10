@@ -4,14 +4,14 @@ from django.db import models
 from user_auth.models import User
 
 
-class UsersSerializers(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
         fields = (
-            'email',
-            'phone',
-            'is_active'
+            'chat_id',
+            'is_active',
+            'is_subscripted'
         )
 
 
@@ -26,18 +26,6 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 
         # Добавление пользовательских полей в токен
         token['username'] = user.username
+        token['chat_id'] = user.chat_id
         token['email'] = user.email
         return token
-
-    # def get_paying(self, obj):
-    #     # paying_serializers = PayingSerializers(obj.user_set.all(), many=True)
-    #     # return paying_serializers.data
-    #
-    #     paying = obj.paying_set.all()
-    #     if paying:
-    #         return paying
-    #     return []
-
-    # def get_paying(self, obj):
-    #     paying_serializers = PayingSerializers(obj.paying_set.all(), many=True)
-    #     return paying_serializers.data

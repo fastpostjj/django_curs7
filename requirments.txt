@@ -4,16 +4,15 @@ psycopg
 # psycopg2-binary
 # pillow
 python-dotenv
-# django-filter
+django-filter
 djangorestframework-simplejwt
 drf_yasg
 django-cors-headers
-# stripe
 redis
 celery
 django_celery_beat
-django_filters'
+django_filters
+requests
 
 #Windows
 eventlet
-requests

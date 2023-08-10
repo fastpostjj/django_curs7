@@ -17,7 +17,8 @@ class Command(BaseCommand):
 
     def create_superuser(self, *args, **options):
         user = User.objects.create(
-            email='admin@admin.pro',
+            chat_id=1,
+            # email='admin@admin.pro',
             first_name='Admin',
             last_name='SuperAdmin',
             is_staff=True,
@@ -28,7 +29,8 @@ class Command(BaseCommand):
 
     def create_user(self, *args, **options):
         user = User.objects.create(
-            email='fastpost@yandex.ru',
+            chat_id=3,
+            # email='fastpost@yandex.ru',
             # email='fastpost@rambler.ru',
             first_name='User',
             last_name='Just User',
@@ -40,7 +42,8 @@ class Command(BaseCommand):
 
     def create_manager(self, *args, **options):
         user = User.objects.create(
-            email='manager@manager.ru',
+            # email='manager@manager.ru',
+            chat_id=2,
             first_name='manager',
             last_name='moderator',
             is_staff=True,
@@ -61,7 +64,7 @@ class Command(BaseCommand):
         user.save()
 
     def handle(self, *args, **options):
-        # self.create_superuser( *args, **options)
-        # self.create_manager( *args, **options)
-        # self.create_user( *args, **options)
-        self.change_password(*args, **options)
+        self.create_superuser( *args, **options)
+        self.create_manager( *args, **options)
+        self.create_user( *args, **options)
+        # self.change_password(*args, **options)

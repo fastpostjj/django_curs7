@@ -20,7 +20,6 @@ class User(AbstractUser):
         **NULLABLE
     )
     email = models.EmailField(
-        # unique=True,
         verbose_name='почта'
     )
     phone = models.CharField(

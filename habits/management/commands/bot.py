@@ -6,10 +6,9 @@ from habits.services.services import Bot_message
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        method = 'getMe'
         bot = Bot_message()
         bot.get_updates()
-        # self.send_message(chat_id=729962006, text="тестовое сообщение")
+        bot.send_habits()
 
 
 

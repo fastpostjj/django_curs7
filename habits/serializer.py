@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from datetime import timedelta
-from habits.models import Habits_pleasant, Habits_useful
+from habits.models import Habits
 
 
 class HabitsTimeCustomValidator:
@@ -8,6 +8,7 @@ class HabitsTimeCustomValidator:
     Валидатор длительности времени на выполнение действия.
     Не более 120 секунд.
     """
+
     def __init__(self, field):
         self.field = field
 
@@ -18,43 +19,58 @@ class HabitsTimeCustomValidator:
             raise serializers.ValidationError(message)
 
 
-class HabitsCompensationCustomValidator:
+class HabitsPleasantCustomValidator:
     def __init__(self, field):
         self.field = field
 
     def __call__(self, value):
-        if not (value is None and self.compensation is None):
-            message = f'У полезной привычки не может быть одновременно вознаграждения и связанной приятной привычки!'
-            raise serializers.ValidationError(message)
+        is_pleasant = value.get('is_pleasant')
+        linked_habit = value.get('linked_habit')
+        compensation = value.get('compensation')
+        if is_pleasant:
+            if linked_habit is not None or compensation is not None:
+                message = f'У приятной привычки не может быть вознаграждения и связанной приятной привычки!'
+                raise serializers.ValidationError(message)
+        else:
+            if (linked_habit is None) and (compensation is None):
+                message = f'У полезной привычки должно быть вознаграждение или связанная приятная привычка!'
+                raise serializers.ValidationError(message)
+            else:
+                if not (compensation is None or linked_habit is None):
+                    message = f'У полезной привычки не может быть одновременно вознаграждения и связанной приятной привычки!'
+                    raise serializers.ValidationError(message)
 
 
-class HabitsLinkedCustomValidator:
-    def __init__(self, field):
-        self.field = field
+# class HabitsLinkedCustomValidator:
+#     def __init__(self, field):
+#         self.field = field
 
-    def __call__(self, value):
+#     def __call__(self, value):
+#         linked_habit = value.get('linked_habit')
+#         compensation = value.get('compensation')
 
-        if not (value is None and self.linked_habit is None):
-            message = f'У полезной привычки не может быть одновременно вознаграждения и связанной приятной привычки!'
-            raise serializers.ValidationError(message)
+#         if not (compensation is None or linked_habit is None):
+#             message = f'У полезной привычки не может быть одновременно вознаграждения и связанной приятной привычки!'
+#             raise serializers.ValidationError(message)
 
 
-class Habits_pleasantSerializer(serializers.ModelSerializer):
+# class Habits_pleasantSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Habits_pleasant
+#         fields = '__all__'
+
+#     validators = [HabitsTimeCustomValidator(field='time_for_action')]
+
+
+class HabitsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Habits_pleasant
-        fields = '__all__'
-
-    validators = [HabitsTimeCustomValidator(field='time_for_action')]
-
-
-class Habits_usefulSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Habits_useful
+        model = Habits
         fields = '__all__'
 
     validators = [HabitsTimeCustomValidator(field='time_for_action'),
-                  HabitsLinkedCustomValidator(field='linked_habit'),
-                  HabitsCompensationCustomValidator(field='compensation')
+                #   HabitsLinkedCustomValidator(field='linked_habit'),
+                #   HabitsLinkedCustomValidator(field='compensation'),
+                  HabitsPleasantCustomValidator(field='is_pleasant')
                   ]
 
 
