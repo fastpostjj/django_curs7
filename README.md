@@ -52,4 +52,5 @@
 Команды для запуска celery и beat:
 
 celery -A config worker -l INFO -P eventlet
+
 celery -A config beat -l INFO
