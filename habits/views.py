@@ -1,15 +1,25 @@
 from django.shortcuts import render
 from rest_framework import generics
+from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
-from django.db.models import Q
+from rest_framework.response import Response
+from rest_framework import status
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
+from datetime import datetime, timedelta
+
+from django_celery_beat.models import PeriodicTask, \
+    IntervalSchedule
+from habits.tasks import send_habits, check_message
 from habits.serializer import HabitsSerializer
 from habits.models import Habits
 from habits.paginations import PaginationClass
-from habits.permissions import OwnerOrStaffOrAdminHabits, \
-    OwnerOrStaffOrAdmin
+from habits.permissions import OwnerOrStaffOrAdminHabits
+from habits.services.services import check_message_bot
 
 
 # Create your views here.
+
 
 class HabitsPublicListView(generics.ListAPIView):
     """
@@ -132,3 +142,42 @@ class HabitsRetrieveAPIView(generics.RetrieveAPIView):
             return Habits.objects.none()
         else:
             return queryset
+
+
+class CheckMessageBotView(APIView):
+    """
+    проверяем сообщения от бота и при необходимости
+    создаем новых пользователей
+    """
+    permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(description='Success'),
+            204: openapi.Response(description='Unsuccess'),
+
+        }
+    )
+    def get(self, request):
+        result = check_message_bot()
+
+        if result:
+            return Response(status.HTTP_200_OK)
+        else:
+            return Response(status.HTTP_204_NO_CONTENT)
+
+
+class SendMessagBotView(APIView):
+    """
+    создаем задачу на рассылку привычек
+    """
+    permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(description='Success'),
+        }
+    )
+    def get(self, request):
+        send_habits()
+        return Response(status.HTTP_200_OK)

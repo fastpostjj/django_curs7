@@ -214,13 +214,18 @@ CELERY_TASK_TRACK_STARTED = True
 # Максимальное время на выполнение задачи
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
-# Настройки для Celery
-CELERY_BEAT_SCHEDULE = {
-    'task-name': {
-        'task': 'habits.check_message_bot',  # Путь к задаче
-        'schedule': timedelta(minutes=10),  # Расписание выполнения задачи (каждые 10 минут)
-    },
-}
+# # Настройки распиания задач
+# CELERY_BEAT_SCHEDULE = {
+#     # 'task-name': {
+#     #     'task': 'habits.check_message',
+#     #     'schedule': timedelta(minutes=1),
+#     # },
+#     'checking-habits': {
+#         'task': 'habits.task.send_habits',
+#         'schedule': timedelta(minutes=1),
+#     },
+# }
+
 
 # Логгирование celery
 LOGGING = {

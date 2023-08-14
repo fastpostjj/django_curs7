@@ -381,3 +381,26 @@ class TestHabits(APITestCase):
         habit = Habits.objects.get(pk=habit_id)
         user = User.objects.get(id=user_id)
         self.assertEqual(habit.user, user)
+
+
+class TestBot(APITestCase):
+    def setUp(self):
+        super().setUp()
+        self.user = TestUser.create_user()
+        data = {"chat_id": self.user.chat_id,
+                "password": TEST_USER_PASSWORD
+                }
+        # self.client.force_authenticate(self.user)
+        self.url_token = reverse('token_obtain_pair')
+        response = self.client.post(self.url_token, data)
+        self.access_token = response.json().get('access')
+        self.client.credentials(
+            HTTP_AUTHORIZATION=f'Bearer {self.access_token}')
+
+    def test_check_message(self):
+        response = self.client.get(reverse("check_message"))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_send_message(self):
+        response = self.client.get(reverse("send_message"))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)

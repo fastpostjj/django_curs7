@@ -1,7 +1,7 @@
 Django
 djangorestframework
-psycopg
-# psycopg2-binary
+# psycopg
+psycopg2-binary
 # pillow
 python-dotenv
 django-filter
@@ -11,8 +11,8 @@ django-cors-headers
 redis
 celery
 django_celery_beat
-django_filters
+django_filter
 requests
 
 #Windows
-eventlet
+# eventlet

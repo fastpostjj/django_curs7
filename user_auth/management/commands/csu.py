@@ -5,14 +5,8 @@ from user_auth.models import User
 
 class Command(BaseCommand):
     """
-    {
-    "email":"admin@admin.pro",
-    "password":"123abc123"
-}
-    {
-    "email":"manager@manager.ru",
-    "password":"123abc123"
-}
+   Создаем суперпользователя, менеджера и обычного пользователя
+   с id 1, 2, 3
     """
 
     def create_superuser(self, *args, **options):
@@ -30,8 +24,6 @@ class Command(BaseCommand):
     def create_user(self, *args, **options):
         user = User.objects.create(
             chat_id=3,
-            # email='fastpost@yandex.ru',
-            # email='fastpost@rambler.ru',
             first_name='User',
             last_name='Just User',
             is_staff=False,
@@ -53,12 +45,7 @@ class Command(BaseCommand):
         user.save()
 
     def change_password(self, *args, **options):
-        # user = User.objects.get(email='fastpost@yandex.ru')
-        user = User.objects.get(email='example@example.com')
-        # user = User.objects.get(email='user1@mail.ru')
-        # user = User.objects.get(email='fastfastpost@yandex.ru')
-        # user = User.objects.get(email='fastfastpost@yandex.ru')
-        print(user.check_password('123abc123'))
+        user = User.objects.get(chat_id=2)
         user.set_password('123abc123')
 
         user.save()
