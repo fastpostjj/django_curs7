@@ -1,6 +1,4 @@
 import json
-from datetime import datetime, timedelta
-
 from django_celery_beat.models import PeriodicTask, \
     IntervalSchedule
 from habits.models import Habits
@@ -62,20 +60,23 @@ def create_task():
         # Создаем интервал для повтора
         schedule, created = create_schedule(period)
 
-        name="Habit " + str(habit.id) + " " + str(period)
+        name = "Habit " + str(habit.id) + " " + str(period)
         task_habit = PeriodicTask.objects.filter(name=name)
         if not task_habit.exists():
-            
+
             # Создаем задачу для повторения
             PeriodicTask.objects.create(
                 interval=schedule,
                 name=name,
-                start_time=datetime.combine(datetime.today(), habit.time),
+                # start_time=datetime.combine(timezone.now().today(),
+                # habit.time),
+                # start_time=timezone.now(),
+                # start_time=timezone.localtime(),
                 task='habits.tasks.send_one_message_bot',
                 # args=json.dumps(['arg1', 'arg2']),
                 kwargs=json.dumps({
-                    'chat_id':habit.user.chat_id,
-                    'text':text
+                    'chat_id': chat_id,
+                    'text': text
                 }),
-                expires=datetime.utcnow() + timedelta(seconds=30)
+                # expires=datetime.utcnow() + timedelta(seconds=30)
             )

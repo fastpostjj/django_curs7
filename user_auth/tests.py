@@ -1,9 +1,8 @@
-from django.test import TestCase
 from rest_framework.test import APITestCase
 
 from django.urls import reverse
 from user_auth.models import User
-from habits.tests import TestUser, TEST_CHAT_ID_USER, TEST_USER_PASSWORD
+from habits.tests import TEST_CHAT_ID_USER, TEST_USER_PASSWORD
 
 # Create your tests here.
 

@@ -1,5 +1,4 @@
 from datetime import timedelta
-from django.test import TestCase
 from rest_framework import status
 from rest_framework.test import APITestCase
 from django.urls import reverse
@@ -51,7 +50,6 @@ class TestUser():
         user.set_password(TEST_USER_PASSWORD2)
         user.save()
         return user
-
 
     @staticmethod
     def create_staff(*args, **kwargs):
@@ -189,7 +187,7 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.json(), {
             "non_field_errors": [
-                "У приятной привычки не может быть вознаграждения и связанной приятной привычки!"]
+                "У приятной привычки не может быть одновременно вознаграждения и связанной приятной привычки!"]
         })
 
     def test_create_wrong_linked_habit(self):
@@ -208,7 +206,7 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.json(), {
             "non_field_errors": [
-                "У приятной привычки не может быть вознаграждения и связанной приятной привычки!"]
+                "У приятной привычки не может быть одновременно вознаграждения и связанной приятной привычки!"]
         })
 
     def test_create_wrong_linked_habit_and_compensation(self):
@@ -293,13 +291,13 @@ class TestHabits(APITestCase):
         # Получение ID созданной привычки
         habit_id = response.json().get('id')
 
-
         # Создаем второго пользователя
         self.user2 = TestUser.create_user2()
 
-        data2 = {"chat_id": self.user2.chat_id,
-                "password": TEST_USER_PASSWORD2
-                }
+        data2 = {
+            "chat_id": self.user2.chat_id,
+            "password": TEST_USER_PASSWORD2
+        }
         # получаем  токен для второго пользователя и добавляем его в заголовок
         response = self.client.post(self.url_token, data2)
         self.access_token2 = response.json().get('access')
@@ -320,9 +318,14 @@ class TestHabits(APITestCase):
         }
         update_response = self.client.patch(update_url, update_data)
 
-
-        self.assertEqual(update_response.status_code, status.HTTP_403_FORBIDDEN)
-        self.assertEqual(update_response.json().get('detail'), 'У вас недостаточно прав для выполнения данного действия.')
+        self.assertEqual(
+            update_response.status_code,
+            status.HTTP_403_FORBIDDEN
+                         )
+        self.assertEqual(
+            update_response.json().get('detail'),
+            'У вас недостаточно прав для выполнения данного действия.'
+                         )
 
     def test_delete(self):
         delete_habit = Habits.objects.create(
@@ -345,7 +348,7 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_habits_public_list(self):
-        habit = Habits.objects.create(
+        Habits.objects.create(
             user=self.user,
             place="публичная",
             time="13:00:00",

@@ -1,15 +1,10 @@
-from asyncio import sleep
-import pytz
 import requests
-from datetime import datetime, timedelta
-from django.utils import timezone
-from celery import shared_task
-from config.settings import TIME_ZONE
 from random import sample
 from user_auth.models import User
 from habits.models import Habits, BotMessages
 from config.settings import BOT_URL, bot_token
-import json
+from config.settings import BASE_DIR
+import os
 
 
 class Bot_message():
@@ -100,7 +95,7 @@ class Bot_message():
         response = requests.get(
             url,
         ).json()
-        if response['ok'] == True:
+        if response['ok'] is True:
             result = response['result']
             for update in result:
                 message = update['message']
@@ -131,129 +126,10 @@ class Bot_message():
         chat_id = kwargs.get('chat_id')
         text = kwargs.get('text')
         response = requests.get(url, params={'chat_id': chat_id, 'text': text})
+
+        file_name = str(BASE_DIR) + os.sep + "log.txt"
+
+        with open(file_name, "a") as file:
+            file.write(f"send_message {chat_id} {text} {response}\n")
+
         return response.status_code
-
-    # @staticmethod
-    # def is_now_time_for_send(habit):
-    #     current_time = timezone.now()
-    #     # Определяем временные интервалы для каждой периодичности
-    #     intervals = {
-    #         'every 15 minutes': timedelta(minutes=15),
-    #         'hourly': timedelta(hours=1),
-    #         'daily': timedelta(days=1),
-    #         'weekly': timedelta(weeks=1)
-    #     }
-
-    #     datetime_now = timezone.now()
-
-    #     next = intervals[habit.period]
-    #     print("next=", next)
-        # Проверяем, отправляли ли уже сообщение с данной привычкой в течение периода
-        # if not habit.last_time_send:
-        #     # ни разу не отправляли
-        #     print("Время отправки привычки :", habit.time)
-        # if BotMessages.objects.filter(
-        #         user=habit.user,
-        #         message_text=habit.activity,
-        #         last_time_send=current_time-intervals[habit.period]).exists():
-        #     print("Привычка для отправки: ", BotMessages.objects.filter(
-        #         user=habit.user,
-        #         message_text=habit.activity,
-        #         last_time_send=current_time-intervals[habit.period]).exists())
-
-
-        # if habit.last_time_send:
-        #     next_time = habit.last_time_send + next
-        #     print()
-        #     if next_time >= current_time:
-        #         print("Пора")
-        #         print("next_time=", next_time, " current_time=", current_time)
-        #         print("habit=", habit, " habit.period=", habit.period)
-        #         return True
-        #     else:
-        #         print("Еще не время")
-        #         print("next_time=", next_time, " current_time=", current_time)
-        #         print("habit=", habit, " habit.period=", habit.period)
-        #         return False
-        # else:
-        #     # еще ни разу не отправляли
-        #     next_time = habit.time
-        #     print("\nНи разу не отправляли")
-        #     print("next_time=", next_time, " current_time=", current_time)
-        #     print("habit=", habit, " habit.time=",
-        #           habit.time, " habit.period=", habit.period)
-        #     if habit.time == current_time:
-        #         print("Пора")
-        #         print("next_time=", next_time, " current_time=", current_time)
-        #         print("habit=", habit, " habit.period=", habit.period)
-        #         return True
-        #     else:
-        #         print("Еще не время")
-
-        #     return False
-
-    # @staticmethod
-    # def get_next_time_for_send(habit:Habits) -> timedelta:
-    #     print()
-    #     print("habit=", habit)
-    #     print("habit.last_time_send=", habit.last_time_send)
-    #     print("habit.time=", habit.time)
-    #     print("habit.period=", habit.period)
-    #     current_time = timezone.now()
-    #     # Определяем временные интервалы для каждой периодичности
-    #     intervals = {
-    #         'every 15 minutes': timedelta(minutes=15),
-    #         'hourly': timedelta(hours=1),
-    #         'daily': timedelta(days=1),
-    #         'weekly': timedelta(weeks=1)
-    #     }
-    #     if habit.last_time_send:
-    #         # Если уже отправляли
-    #         print("intervals[habit.period]=", intervals[habit.period])
-    #         next_time =  habit.last_time_send.time() + intervals[habit.period]
-    #         while next_time < current_time:
-    #             next_time +=  intervals[habit.period]
-    #             print("next_time=, next_time")
-    #     else:
-    #         # если еще ни разу не отправляли
-    #         next_time =  habit.time
-    #         while next_time < current_time:
-    #             next_time +=  intervals[habit.period]
-    #             print("next_time=, next_time")
-    #     return next_time
-
-    # def send_habits(self):
-    #     # скрипт для рассылки напоминаний
-
-    #     # habits = Habits.objects.filter(
-    #     # user__is_subscripted=True,
-    #     # time=current_time
-    #     # )
-    #     current_time = timezone.now()
-    #     stop_time = timezone.now() + timedelta(minutes=1)
-    #     while current_time < stop_time:
-    #         habits = Habits.objects.all()
-    #         # print("Привычки для рассылки: ", habits)
-    #         for habit in habits:
-    #             print(" habit.time=", habit.time, " current_time=", current_time, " habit=", habit)
-    #             print("Время следующей отправки ", self.get_next_time_for_send(habit))
-    #             if habit.time == current_time:
-
-
-    #             # if self.is_now_time_for_send(habit):
-    #                 chat_id = habit.user
-    #                 text = "Время выполнить привычку: " + str(habit)
-    #                 if not habit.is_pleasant:
-    #                     if habit.compensation:
-    #                         text += "\nВознаграждение за выполнение: " + \
-    #                             str(habit.compensation)
-    #                     else:
-    #                         text += "\nВознаграждение за выполнение: " + \
-    #                             str(habit.linked_habit)
-    #                 print(text)
-    #             #     send_message_delay.delay(chat_id=habit.user, text=text, time=0)
-    #                 send_message(chat_id=habit.user, text=text, time=0)
-    #                 habit.last_send = timezone.now()
-    #                 habit.save()
-    #         current_time = timezone.now()
-

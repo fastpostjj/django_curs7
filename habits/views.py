@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
@@ -6,11 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
-from datetime import datetime, timedelta
-
-from django_celery_beat.models import PeriodicTask, \
-    IntervalSchedule
-from habits.tasks import send_habits, check_message
+from habits.tasks import send_habits
 from habits.serializer import HabitsSerializer
 from habits.models import Habits
 from habits.paginations import PaginationClass
@@ -68,7 +63,8 @@ class HabitsListView(generics.ListAPIView):
             return Habits.objects.none()
         else:
             if self.request.user.is_staff or self.request.user.is_superuser:
-                # Пользователь с правами персонала или администратора может видеть все привычки
+                # Пользователь с правами персонала или администратора
+                # может видеть все привычки
                 queryset = queryset.order_by('time')
             else:
                 # Обычный пользователь - только свои

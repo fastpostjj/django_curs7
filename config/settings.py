@@ -190,7 +190,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://read-and-write.example.com", #  адрес фронтенд-сервера
+    "https://read-and-write.example.com",  # адрес фронтенд-сервера
     # и добавьте адрес бэкенд-сервера
 ]
 
@@ -235,7 +235,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': str(BASE_DIR ) +  '/' + 'err.log',
+            'filename': str(BASE_DIR) + '/' + 'err.log',
         },
     },
     'loggers': {
@@ -247,11 +247,12 @@ LOGGING = {
     },
 }
 
-BOT_URL='https://api.telegram.org/bot'
+BOT_URL = 'https://api.telegram.org/bot'
 
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_FILTER_BACKENDS':
+    ['django_filters.rest_framework.DjangoFilterBackend'],
     # Настройки JWT-токенов
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -267,5 +268,3 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15000),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
-# current_dir = os.getcwd()
-# print("Текущая директория:", current_dir)

@@ -1,6 +1,5 @@
 from habits.services.services import check_message_bot
 from config.celery import app
-from celery import shared_task
 from config.settings import BASE_DIR
 import os
 from habits.services.services import Bot_message
@@ -8,7 +7,6 @@ from habits.services.set_new_task import create_task
 
 
 @app.task
-# @shared_task
 def check_message(*args):
     """
     периодическая задача вызывает функцию проверки

@@ -1,6 +1,5 @@
-import json
-from datetime import datetime, timedelta
-
+# from datetime import datetime, timedelta
+# from django.utils import timezone
 from django_celery_beat.models import PeriodicTask, \
     IntervalSchedule
 
@@ -37,7 +36,7 @@ def set_tasks():
     if not task_check.exists():
         PeriodicTask.objects.create(
             interval=schedule_check,
-            start_time=datetime.today(),
+            # start_time=timezone.now(),
             name='Check_message',
             task='habits.tasks.check_message'
         )
@@ -65,6 +64,6 @@ def set_tasks():
         PeriodicTask.objects.create(
             interval=schedule_send,
             name='Send_habit',
-            start_time=datetime.today(),
+            # start_time=timezone.now(),
             task='habits.tasks.send_habits'
         )
