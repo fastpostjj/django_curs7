@@ -129,7 +129,7 @@ class Bot_message():
 
         file_name = str(BASE_DIR) + os.sep + "log.txt"
 
-        with open(file_name, "a") as file:
-            file.write(f"send_message {chat_id} {text} {response}\n")
+        with open(file_name, "a", encoding="utf-8") as file:
+            file.write(f"send_message kwargs={kwargs} {chat_id} {text} {response.json()}\n")
 
         return response.status_code

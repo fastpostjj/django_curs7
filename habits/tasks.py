@@ -2,6 +2,7 @@ from habits.services.services import check_message_bot
 from config.celery import app
 from config.settings import BASE_DIR
 import os
+import json
 from habits.services.services import Bot_message
 from habits.services.set_new_task import create_task
 
@@ -15,7 +16,7 @@ def check_message(*args):
     check_message_bot()
     file_name = str(BASE_DIR) + os.sep + "log.txt"
 
-    with open(file_name, "a") as file:
+    with open(file_name, "a", encoding="utf-8") as file:
         file.write("send_message_bot\n")
 
 
@@ -28,7 +29,7 @@ def send_habits(*args):
     create_task()
     file_name = str(BASE_DIR) + os.sep + "log.txt"
 
-    with open(file_name, "a") as file:
+    with open(file_name, "a", encoding="utf-8") as file:
         file.write("send_habits\n")
 
 
@@ -40,10 +41,11 @@ def send_one_message_bot(*args, **kwargs):
     chat_id = kwargs.get('chat_id')
     text = kwargs.get('text')
     bot = Bot_message()
-    status = bot.send_message(chat_id, text)
+    # status = bot.send_message(chat_id=chat_id, text=text)
+    status = bot.send_message(*args, **kwargs)
 
     file_name = str(BASE_DIR) + os.sep + "log.txt"
 
     with open(file_name, "a") as file:
-        file.write(f"send_one_message_bot {chat_id} {text} \n")
+        file.write(f"send_one_message_bot kwargs= {kwargs}\n")
     return status

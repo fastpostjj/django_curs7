@@ -1,7 +1,11 @@
 import json
+import datetime
+import pytz
+from django.utils import timezone
 from django_celery_beat.models import PeriodicTask, \
     IntervalSchedule
 from habits.models import Habits
+from config.settings import TIME_ZONE
 
 
 def create_schedule(period='hourly'):
@@ -47,7 +51,7 @@ def create_task():
     habits = Habits.objects.filter(user__is_subscripted=True)
     for habit in habits:
         period = habit.period
-        chat_id = habit.user
+        chat_id = habit.user.chat_id
         text = "Время выполнить привычку: " + str(habit)
         if not habit.is_pleasant:
             if habit.compensation:
@@ -62,6 +66,14 @@ def create_task():
 
         name = "Habit " + str(habit.id) + " " + str(period)
         task_habit = PeriodicTask.objects.filter(name=name)
+        start_time = timezone.datetime.combine(
+            timezone.now().today(),
+            habit.time)
+
+        start_time = timezone.make_aware(
+            start_time,
+            timezone=pytz.timezone(TIME_ZONE)
+            )
         if not task_habit.exists():
 
             # Создаем задачу для повторения
@@ -72,6 +84,7 @@ def create_task():
                 # habit.time),
                 # start_time=timezone.now(),
                 # start_time=timezone.localtime(),
+                start_time=start_time,
                 task='habits.tasks.send_one_message_bot',
                 # args=json.dumps(['arg1', 'arg2']),
                 kwargs=json.dumps({
