@@ -32,16 +32,12 @@ class HabitsAdmin(admin.ModelAdmin):
         'id',
         'user',
         'activity',
-        'datetime_start',
-        
         'time',
         'place',
         'period',
-        # 'is_pleasant',
         'is_public',
         'linked_habit',
-        'compensation',
-        'last_time_send'
+        'compensation'
     )
     list_display_links = (
         'id',
@@ -50,11 +46,9 @@ class HabitsAdmin(admin.ModelAdmin):
         'time',
         'place',
         'period',
-        # 'is_pleasant',
         'is_public',
         'linked_habit',
-        'compensation',
-        'last_time_send'
+        'compensation'
     )
     list_filter = (
         'id',
@@ -63,11 +57,9 @@ class HabitsAdmin(admin.ModelAdmin):
         'time',
         'place',
         'period',
-        # 'is_pleasant',
         'is_public',
         'linked_habit',
-        'compensation',
-        'last_time_send'
+        'compensation'
     )
     search_fields = (
         'id',
@@ -76,60 +68,7 @@ class HabitsAdmin(admin.ModelAdmin):
         'time',
         'place',
         'period',
-        # 'is_pleasant',
         'is_public',
         'linked_habit',
-        'compensation',
-        'last_time_send'
+        'compensation'
     )
-
-# @admin.register(Habits_useful)
-# class Habits_usefulAdmin(admin.ModelAdmin):
-#     list_display = (
-#         'id',
-#         'user',
-#         'activity',
-#         'time',
-#         'place',
-#         'period',
-#         # 'is_pleasant',
-#         'is_public',
-#         'linked_habit',
-#         'compensation'
-#     )
-#     list_display_links = (
-#         'id',
-#         'user',
-#         'activity',
-#         'time',
-#         'place',
-#         'period',
-#         # 'is_pleasant',
-#         'is_public',
-#         'linked_habit',
-#         'compensation'
-#     )
-#     list_filter = (
-#         'id',
-#         'user',
-#         'activity',
-#         'time',
-#         'place',
-#         'period',
-#         # 'is_pleasant',
-#         'is_public',
-#         'linked_habit',
-#         'compensation'
-#     )
-#     search_fields = (
-#         'id',
-#         'user',
-#         'activity',
-#         'time',
-#         'place',
-#         'period',
-#         # 'is_pleasant',
-#         'is_public',
-#         'linked_habit',
-#         'compensation'
-#     )

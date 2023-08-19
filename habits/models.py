@@ -38,37 +38,6 @@ from user_auth.models import User
 """
 
 
-# class TelegramUser(models.Model):
-
-#     """
-#     chat_id
-#     phone
-#     is_subscripted
-#     """
-
-#     # username = None
-#     chat_id = models.IntegerField(
-#         verbose_name="chat_id",
-#         **NULLABLE)
-#     phone = models.CharField(
-#         max_length=35,
-#         verbose_name='телефон',
-#         **NULLABLE)
-#     is_subscripted = models.BooleanField(
-#         verbose_name="Подписан",
-#         default=False)
-
-#     # USERNAME_FIELD = 'chat_id'
-#     # REQUIRED_FIELDS = []
-
-#     def __str__(self):
-#         return f"chat_id={self.chat_id}"
-
-#     class Meta:
-#         verbose_name = 'пользователь телеграма'
-#         verbose_name_plural = 'пользователи телеграма'
-
-
 class Habits_abstract(models.Model):
     """
     Абстрактный класс для описания модели привычки.
@@ -108,12 +77,6 @@ class Habits_abstract(models.Model):
     time = models.TimeField(
         verbose_name="Время"
     )
-    datetime_start = models.DateTimeField(
-        verbose_name="Дата и время начала рассылки",
-        auto_now=True,
-        **NULLABLE
-    )
-
     place = models.CharField(
         verbose_name="Место",
         max_length=150,
@@ -144,20 +107,20 @@ class Habits_abstract(models.Model):
         default=False
     )
 
-    last_time_send = models.DateTimeField(
-        verbose_name="Дата и время последней отправки привычки",
-        **NULLABLE
-    )
+    def get_name_periodic_task(self):
+        return f"Habit {self.id} {self.period}"
 
     def __repr__(self) -> str:
         time = self.time.strftime('%H:%M')
         return f'я буду {self.activity} в {time} в {self.place},'\
-            + f' время :{self.time_for_action}'
+            + f' длительность :{self.time_for_action} ' + \
+            f'{self.get_period_display()}'
 
     def __str__(self) -> str:
         time = self.time.strftime('%H:%M')
         return f'я буду {self.activity} в {time} в {self.place},'\
-            + f' время :{self.time_for_action}'
+            + f' длительность :{self.time_for_action} ' + \
+            f'{self.get_period_display()}'
 
     class Meta:
         abstract = True

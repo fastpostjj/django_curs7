@@ -6,21 +6,20 @@ from django_celery_beat.models import PeriodicTask, \
 
 def set_tasks():
     """"
-    функция создает 2 периодические задачи:
+    функция создает периодическую задачу:
     -   habits.tasks.check_message - задача проверки новых
-    сообщений от телеграм-бота каждые 5 минут
-    -   habits.tasks.send_habits - задача рассылки привычек
-    по расписанию каждые 3 минуты
-
+    сообщений от телеграм-бота каждую минуту
     """
+
+    time_check_messages = 1
     # Проверяем, есть ли уже такой интервал, если нет -создаем его
     schedule_check = IntervalSchedule.objects.filter(
-        every=5,
+        every=time_check_messages,
         period=IntervalSchedule.MINUTES
     )
     if not schedule_check.exists():
         schedule_check = IntervalSchedule.objects.create(
-            every=5,
+            every=time_check_messages,
             period=IntervalSchedule.MINUTES
         )
     else:
@@ -31,24 +30,33 @@ def set_tasks():
         task='habits.tasks.check_message'
     )
 
-    # Проверяем есть ли такая задача и создаем если нет задачу
+    # Проверяем есть ли такая задача и если нет - создаем задачу
     # для проверки новых сообщений
     if not task_check.exists():
         PeriodicTask.objects.create(
             interval=schedule_check,
-            # start_time=timezone.now(),
             name='Check_message',
             task='habits.tasks.check_message'
         )
 
+
+def set_task_send_habits():
+    """
+    -   habits.tasks.send_habits - задача рассылки привычек
+    по расписанию каждые 5 минут
+    !!!Не используется
+
+    """
+    time_send_habits = 5
+
     # Создаем интервал для повтора
     schedule_send = IntervalSchedule.objects.filter(
-        every=3,
+        every=time_send_habits,
         period=IntervalSchedule.MINUTES
     )
     if not schedule_send.exists():
         schedule_send = IntervalSchedule.objects.create(
-            every=3,
+            every=time_send_habits,
             period=IntervalSchedule.MINUTES
         )
     else:
@@ -64,6 +72,5 @@ def set_tasks():
         PeriodicTask.objects.create(
             interval=schedule_send,
             name='Send_habit',
-            # start_time=timezone.now(),
             task='habits.tasks.send_habits'
         )

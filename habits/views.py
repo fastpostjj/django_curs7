@@ -10,7 +10,8 @@ from habits.serializer import HabitsSerializer
 from habits.models import Habits
 from habits.paginations import PaginationClass
 from habits.permissions import OwnerOrStaffOrAdminHabits
-from habits.services.services import check_message_bot
+from habits.services.services import check_message_bot, create_periodic_task, \
+    update_periodic_task, del_periodic_task
 
 
 # Create your views here.
@@ -82,7 +83,10 @@ class HabitsCreateAPIView(generics.CreateAPIView):
     queryset = Habits.objects.all()
 
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
+        # serializer.save(user=self.request.user)
+        instance = serializer.save(user=self.request.user)
+        # создаем периодическую задачу по рассылке привычки
+        return create_periodic_task(instance)
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset()
@@ -107,6 +111,15 @@ class HabitsUpdateAPIView(generics.UpdateAPIView):
         else:
             return queryset
 
+    def perform_update(self, serializer):
+        instance = self.get_object()
+        old_instance = instance
+        instance = serializer.save()
+
+        # обновляем периодическую задачу по рассылке привычки
+        update_periodic_task(old_instance, instance)
+        return isinstance
+
 
 class HabitsDestroyAPIView(generics.DestroyAPIView):
     """
@@ -122,6 +135,11 @@ class HabitsDestroyAPIView(generics.DestroyAPIView):
             return Habits.objects.none()
         else:
             return queryset
+
+    def perform_destroy(self, instance):
+        # удаляем периодическую задачу по рассылке привычки
+        del_periodic_task(instance)
+        instance.delete()
 
 
 class HabitsRetrieveAPIView(generics.RetrieveAPIView):
@@ -165,7 +183,7 @@ class CheckMessageBotView(APIView):
 
 class SendMessagBotView(APIView):
     """
-    создаем задачу на рассылку привычек
+    создаем задачи на рассылку привычек
     """
     permission_classes = [IsAuthenticated]
 

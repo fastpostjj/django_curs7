@@ -4,7 +4,7 @@ from config.settings import BASE_DIR
 import os
 import json
 from habits.services.services import Bot_message
-from habits.services.set_new_task import create_task
+from habits.services.set_new_task import create_task_sending_habits
 
 
 @app.task
@@ -17,16 +17,17 @@ def check_message(*args):
     file_name = str(BASE_DIR) + os.sep + "log.txt"
 
     with open(file_name, "a", encoding="utf-8") as file:
-        file.write("send_message_bot\n")
+        file.write("check_message\n")
 
 
 @app.task
 def send_habits(*args):
     """
     периодическая задача вызывает функцию
+    создания периодических задач
     рассылки привычек по расписанию
     """
-    create_task()
+    create_task_sending_habits()
     file_name = str(BASE_DIR) + os.sep + "log.txt"
 
     with open(file_name, "a", encoding="utf-8") as file:
@@ -38,10 +39,7 @@ def send_one_message_bot(*args, **kwargs):
     """
     отправка сообщения text пользователю chat_id в телеграм
     """
-    chat_id = kwargs.get('chat_id')
-    text = kwargs.get('text')
     bot = Bot_message()
-    # status = bot.send_message(chat_id=chat_id, text=text)
     status = bot.send_message(*args, **kwargs)
 
     file_name = str(BASE_DIR) + os.sep + "log.txt"

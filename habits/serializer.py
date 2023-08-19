@@ -15,7 +15,8 @@ class HabitsTimeCustomValidator:
     def __call__(self, value):
         time = value.get('time_for_action')
         if time > timedelta(seconds=120):
-            message = f'Время на выполнение привычки не должно превышать 2 минуты (120 секунд)!'
+            message = f'Время на выполнение привычки не должно' +\
+                ' превышать 2 минуты (120 секунд)!'
             raise serializers.ValidationError(message)
 
 
@@ -29,15 +30,18 @@ class HabitsPleasantCustomValidator:
         compensation = value.get('compensation')
         if is_pleasant:
             if linked_habit is not None or compensation is not None:
-                message = f'У приятной привычки не может быть одновременно вознаграждения и связанной приятной привычки!'
+                message = f"У приятной привычки не может быть одновременно" +\
+                    " вознаграждения и связанной приятной привычки!"
                 raise serializers.ValidationError(message)
         else:
             if (linked_habit is None) and (compensation is None):
-                message = f'У полезной привычки должно быть вознаграждение или связанная приятная привычка!'
+                message = f"У полезной привычки должно быть вознаграждение" +\
+                    " или связанная приятная привычка!"
                 raise serializers.ValidationError(message)
             else:
                 if not (compensation is None or linked_habit is None):
-                    message = f'У полезной привычки не может быть одновременно вознаграждения и связанной приятной привычки!'
+                    message = f"У полезной привычки не может быть одновременно" +\
+                        " вознаграждения и связанной приятной привычки!"
                     raise serializers.ValidationError(message)
 
 

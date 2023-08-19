@@ -32,8 +32,12 @@ class Bot_message():
         """
         генерирует новый пароль
         """
-        password = "".join(sample("".join([str(i) for i in range(
-            0, 10)]) + "*+-_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", 10))
+        password = "".join(sample(
+            "".join([str(i) for i in range(0, 10)]) +
+            "*+-_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            10
+        )
+        )
         return password
 
     def get_last_message_id(self) -> int:
@@ -81,8 +85,10 @@ class Bot_message():
                 chat_id=chat_id,
                 text=f"Ваш id {chat_id} добавлен в базу.\n"
                 + f" Вам установлен пароль для доступа к сайту:\n{password}.\n"
-                + f" Вы можете настроить список привычек для рассылки напоминаний.\n"
-                + f" Для начала отправки необходимо установить пользователю статус is_subscripted=True.\n"
+                + f" Вы можете настроить список привычек для рассылки " +
+                "напоминаний.\n"
+                + f" Для начала отправки необходимо установить пользователю " +
+                "статус is_subscripted=True.\n"
             )
         return user
 
@@ -116,6 +122,10 @@ class Bot_message():
                     new_message.save()
         else:
             print("Ответ не подлежит обработке: ", response)
+            file_name = str(BASE_DIR) + os.sep + "log.txt"
+            with open(file_name, "a", encoding="utf-8") as file:
+                file.write(
+                    f"check new messages: Ответ не подлежит обработке: {response}")
             return False
 
     def send_message(self, *args, **kwargs):
@@ -127,9 +137,9 @@ class Bot_message():
         text = kwargs.get('text')
         response = requests.get(url, params={'chat_id': chat_id, 'text': text})
 
-        file_name = str(BASE_DIR) + os.sep + "log.txt"
+        # file_name = str(BASE_DIR) + os.sep + "log.txt"
 
-        with open(file_name, "a", encoding="utf-8") as file:
-            file.write(f"send_message kwargs={kwargs} {chat_id} {text} {response.json()}\n")
+        # with open(file_name, "a", encoding="utf-8") as file:
+        #     file.write(f"send_message kwargs={kwargs} {chat_id} {text} {response.json()}\n")
 
         return response.status_code

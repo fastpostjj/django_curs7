@@ -5,6 +5,7 @@ from django.urls import reverse
 
 from habits.models import Habits
 from user_auth.models import User
+from django_celery_beat.models import PeriodicTask
 
 # Create your tests here.
 TEST_CHAT_ID_ADMIN = 101
@@ -129,6 +130,13 @@ class TestHabits(APITestCase):
         self.assertEqual(habit.is_public, data['is_public'])
         self.assertEqual(habit.is_pleasant, data['is_pleasant'])
 
+        self.user.is_subscripted = True
+        self.assertIsNotNone(PeriodicTask.objects.filter(
+            name=habit.get_name_periodic_task()
+        )
+        )
+        self.user.is_subscripted = False
+
     def test_habit_create_not_pleasant(self):
         number = Habits.objects.all().count()
         url = reverse('habits_create')
@@ -169,7 +177,8 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.json(), {
             "non_field_errors": [
-                "Время на выполнение привычки не должно превышать 2 минуты (120 секунд)!"]
+                "Время на выполнение привычки " +
+                "не должно превышать 2 минуты (120 секунд)!"]
         })
 
     def test_create_wrong_compensation(self):
@@ -187,7 +196,8 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.json(), {
             "non_field_errors": [
-                "У приятной привычки не может быть одновременно вознаграждения и связанной приятной привычки!"]
+                "У приятной привычки не может быть одновременно" +
+                " вознаграждения и связанной приятной привычки!"]
         })
 
     def test_create_wrong_linked_habit(self):
@@ -206,7 +216,8 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.json(), {
             "non_field_errors": [
-                "У приятной привычки не может быть одновременно вознаграждения и связанной приятной привычки!"]
+                "У приятной привычки не может быть одновременно" +
+                " вознаграждения и связанной приятной привычки!"]
         })
 
     def test_create_wrong_linked_habit_and_compensation(self):
@@ -225,7 +236,8 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.json(), {
             "non_field_errors": [
-                "У полезной привычки не может быть одновременно вознаграждения и связанной приятной привычки!"]
+                "У полезной привычки не может быть одновременно" +
+                " вознаграждения и связанной приятной привычки!"]
         })
 
     def test_create_useful_wrong_linked_habit_and_compensation(self):
@@ -242,7 +254,8 @@ class TestHabits(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.json(), {
             "non_field_errors": [
-                'У полезной привычки должно быть вознаграждение или связанная приятная привычка!']
+                "У полезной привычки должно быть вознаграждение" +
+                " или связанная приятная привычка!"]
         })
 
     def test_update(self):
@@ -267,6 +280,13 @@ class TestHabits(APITestCase):
             seconds=data['time_for_action']))
         self.assertEqual(habit.is_public, data['is_public'])
         self.assertEqual(habit.is_pleasant, data['is_pleasant'])
+
+        self.user.is_subscripted = True
+        self.assertIsNotNone(PeriodicTask.objects.filter(
+            name=habit.get_name_periodic_task()
+        )
+        )
+        self.user.is_subscripted = False
 
     def test_update_another_user(self):
         """
@@ -321,11 +341,11 @@ class TestHabits(APITestCase):
         self.assertEqual(
             update_response.status_code,
             status.HTTP_403_FORBIDDEN
-                         )
+        )
         self.assertEqual(
             update_response.json().get('detail'),
             'У вас недостаточно прав для выполнения данного действия.'
-                         )
+        )
 
     def test_delete(self):
         delete_habit = Habits.objects.create(
@@ -342,9 +362,13 @@ class TestHabits(APITestCase):
         response = self.client.delete(url)
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(Habits.objects.count(), number - 1)
+        self.assertIsNotNone(PeriodicTask.objects.filter(
+            name=delete_habit.get_name_periodic_task()).exists()
+        )
 
     def test_get(self):
-        response = self.client.get(reverse("habits_retrieve", args=[self.habit.id]))
+        response = self.client.get(
+            reverse("habits_retrieve", args=[self.habit.id]))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_habits_public_list(self):
@@ -393,7 +417,6 @@ class TestBot(APITestCase):
         data = {"chat_id": self.user.chat_id,
                 "password": TEST_USER_PASSWORD
                 }
-        # self.client.force_authenticate(self.user)
         self.url_token = reverse('token_obtain_pair')
         response = self.client.post(self.url_token, data)
         self.access_token = response.json().get('access')
