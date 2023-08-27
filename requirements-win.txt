@@ -1,6 +1,7 @@
 Django
 djangorestframework
-psycopg2-binary
+# psycopg2-binary
+
 python-dotenv
 django-filter
 djangorestframework-simplejwt
@@ -13,6 +14,5 @@ django_filter
 requests
 flake8
 
-#Windows
-#psycopg
-#eventlet
+psycopg
+eventlet

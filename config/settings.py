@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-$jjb9i8**_yjea&!^q$p)==jw$e4kvz)7%(00qx7jlmmf%%ce=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -94,14 +95,22 @@ load_dotenv(dotenv_path=dot_env)
 if os.path.isfile(dot_env):
     # Использование переменных окружения
     CACHE_ENABLED = os.getenv('CACHE_ENABLED')
-    user = os.getenv('user')
-    port = os.getenv('port')
-    password = os.getenv('password')
-    host = os.getenv('host')
-    email = os.getenv('email')
-    password_email = os.getenv('password_email')
-    databasename = os.getenv('databasename')
+    # user = os.getenv('user')
+    # port = os.getenv('port')
+    # password = os.getenv('password')
+    # host = os.getenv('host')
+    # email = os.getenv('email')
+    # password_email = os.getenv('password_email')
+    # databasename = os.getenv('databasename')
     bot_token = os.getenv('bot_token')
+    POSTGRES_DB = os.getenv('POSTGRES_DB')
+    POSTGRES_USER = os.getenv('POSTGRES_USER')
+    POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD')
+    POSTGRES_HOST = os.getenv('POSTGRES_HOST')
+    POSTGRES_PORT = os.getenv('POSTGRES_PORT')
+    EMAIL = os.getenv('EMAIL')
+    PASSWORD_EMAIL = os.getenv('PASSWORD_EMAIL')
+
 else:
     raise FileNotFoundError(f"File {dot_env} did not find in {BASE_DIR}")
 
@@ -111,14 +120,14 @@ else:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': databasename,
-        'USER': user,
-        'PORT': port,
-        'PASSWORD': password,
-        'HOST': host
+        'NAME': POSTGRES_DB,
+        'USER': POSTGRES_USER,
+        'PORT': POSTGRES_PORT,
+        'PASSWORD': POSTGRES_PASSWORD,
+        'HOST': POSTGRES_HOST
     }
 }
-
+print("DATABASES =", DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -154,17 +163,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'user_auth.User'
 LOGIN_REDIRECT_URL = '/'
@@ -177,8 +185,8 @@ NULLABLE = {'null': True, 'blank': True}
 
 EMAIL_HOST = 'smtp.yandex.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = email
-EMAIL_HOST_PASSWORD = password_email
+EMAIL_HOST_USER = EMAIL
+EMAIL_HOST_PASSWORD = PASSWORD_EMAIL
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
@@ -199,11 +207,20 @@ CORS_ALLOW_ALL_ORIGINS = False
 
 # Настройки для Celery
 
+# # URL-адрес брокера сообщений, Redis
+# CELERY_BROKER_URL = 'redis://localhost:6379'
+
+# # URL-адрес брокера результатов, также Redis
+# CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+
+REDIS_HOST = os.getenv('REDIS_HOST')
+REDIS_PORT = os.getenv('REDIS_PORT')
+
 # URL-адрес брокера сообщений, Redis
-CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_BROKER_URL = f'redis://{REDIS_HOST}:{REDIS_PORT}'
 
 # URL-адрес брокера результатов, также Redis
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = f'redis://{REDIS_HOST}:{REDIS_PORT}'
 
 # Часовой пояс для работы Celery
 CELERY_TIMEZONE = "Europe/Moscow"
@@ -213,18 +230,6 @@ CELERY_TASK_TRACK_STARTED = True
 
 # Максимальное время на выполнение задачи
 CELERY_TASK_TIME_LIMIT = 30 * 60
-
-# # Настройки распиания задач
-# CELERY_BEAT_SCHEDULE = {
-#     # 'task-name': {
-#     #     'task': 'habits.check_message',
-#     #     'schedule': timedelta(minutes=1),
-#     # },
-#     'checking-habits': {
-#         'task': 'habits.task.send_habits',
-#         'schedule': timedelta(minutes=1),
-#     },
-# }
 
 
 # Логгирование celery
