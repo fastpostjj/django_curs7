@@ -17,3 +17,4 @@ user_auth/services/__pycache__/
 celerybeat-schedule.bak
 celerybeat-schedule.dat
 celerybeat-schedule.dir
+celery_state.db

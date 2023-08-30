@@ -25,3 +25,41 @@ X3mjYxaT1N.
  {'ok': True, 'result': {'message_id': 1114, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693428589, 'text': 'Список ваших привычек:'}}
 2023-08-30 20:49:51.911158+00:00 send_habits
 2023-08-30 20:55:02.301494+00:00 send_habits
+2023-08-30 21:51:39.418057+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Ваш id 729962006 добавлен в базу.\n Вам установлен пароль для доступа к сайту:\nUgyDiLcRXm.\n Вы можете настроить список привычек для рассылки напоминаний.\n Для начала отправки необходимо установить пользователю статус is_subscripted=True.\n'} 729962006 Ваш id 729962006 добавлен в базу.
+ Вам установлен пароль для доступа к сайту:
+UgyDiLcRXm.
+ Вы можете настроить список привычек для рассылки напоминаний.
+ Для начала отправки необходимо установить пользователю статус is_subscripted=True.
+ {'ok': True, 'result': {'message_id': 1116, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432297, 'text': 'Ваш id 729962006 добавлен в базу.\n Вам установлен пароль для доступа к сайту:\nUgyDiLcRXm.\n Вы можете настроить список привычек для рассылки напоминаний.\n Для начала отправки необходимо установить пользователю статус is_subscripted=True.'}}
+2023-08-30 21:51:41.380873+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1117, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432299, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:51:42.045133+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1118, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432300, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:51:43.206593+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1119, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432301, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:51:44.325426+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1120, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432302, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:51:45.153228+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1121, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432303, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:51:45.492740+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1122, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432303, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:51:49.172810+00:00 send_habits
+2023-08-30 21:52:47.523117+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Ваш id 729962006 добавлен в базу.\n Вам установлен пароль для доступа к сайту:\n9Ci2eQUIbE.\n Вы можете настроить список привычек для рассылки напоминаний.\n Для начала отправки необходимо установить пользователю статус is_subscripted=True.\n'} 729962006 Ваш id 729962006 добавлен в базу.
+ Вам установлен пароль для доступа к сайту:
+9Ci2eQUIbE.
+ Вы можете настроить список привычек для рассылки напоминаний.
+ Для начала отправки необходимо установить пользователю статус is_subscripted=True.
+ {'ok': True, 'result': {'message_id': 1123, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432365, 'text': 'Ваш id 729962006 добавлен в базу.\n Вам установлен пароль для доступа к сайту:\n9Ci2eQUIbE.\n Вы можете настроить список привычек для рассылки напоминаний.\n Для начала отправки необходимо установить пользователю статус is_subscripted=True.'}}
+2023-08-30 21:52:49.844940+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1124, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432367, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:52:51.704160+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1125, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432370, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:52:52.741301+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1126, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432370, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:52:54.226545+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1127, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432372, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:52:55.474143+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1128, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432373, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:52:56.243306+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
+ {'ok': True, 'result': {'message_id': 1129, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432374, 'text': 'Список ваших привычек:'}}
+2023-08-30 21:52:57.810864+00:00 send_habits
