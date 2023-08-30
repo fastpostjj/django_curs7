@@ -14,24 +14,20 @@ services:
       - '5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      # - ./my_dump2.sql:/docker-entrypoint-initdb.d/my_dump2.sql
     env_file:
       - ./.env
-      # - ./.env.docker
 
   app:
     build: .
     command: bash -c "python manage.py collectstatic --noinput
+      && python manage.py runserver 0.0.0.0:8000"
       && python manage.py migrate
       && python manage.py loaddata data.json
-      && python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
     volumes:
       - ./.env:/app/.env
-      # - ./.env.docker:/app/.env
     env_file:
-      # - ./.env.docker
       - ./.env
     depends_on:
       db:
@@ -58,13 +54,28 @@ services:
     build: .
     container_name: celery
     command: >
-      bash -c "celery -A config.celery worker --beat --loglevel=info"
+      bash -c "celery -A config.celery worker --beat -l DEBUG  -S django"
     volumes:
-      # - ./.env.docker:/app/.env
       - ./.env:/app/.env
       - .:/app
     links:
       - redis
+    restart: always
+    depends_on:
+      - db
+      - redis
+      - app
+
+  test:
+    build: .
+    command: >
+      bash -c "python manage.py test
+      &&coverage run --source='.' manage.py test
+      && coverage report
+      && coverage html"
+    volumes:
+      - ./.env:/app/.env
+      - .:/app
     depends_on:
       - db
       - redis

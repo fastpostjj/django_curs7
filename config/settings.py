@@ -15,18 +15,25 @@ from dotenv import load_dotenv
 from datetime import timedelta
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Чтение файла с переменными окружения
+dot_env = os.path.join(BASE_DIR, '.env')
+load_dotenv(dotenv_path=dot_env)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$jjb9i8**_yjea&!^q$p)==jw$e4kvz)7%(00qx7jlmmf%%ce='
+SECRET_KEY = \
+    'django-insecure-$jjb9i8**_yjea&!^q$p)==jw$e4kvz)7%(00qx7jlmmf%%ce='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG')
+print("DEB=",DEBUG)
 
 # ALLOWED_HOSTS = ['127.0.0.1']
 ALLOWED_HOSTS = ['*']
@@ -88,28 +95,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Чтение файла с переменными окружения
-dot_env = os.path.join(BASE_DIR, '.env')
-load_dotenv(dotenv_path=dot_env)
-
 if os.path.isfile(dot_env):
     # Использование переменных окружения
     CACHE_ENABLED = os.getenv('CACHE_ENABLED')
-    # user = os.getenv('user')
-    # port = os.getenv('port')
-    # password = os.getenv('password')
-    # host = os.getenv('host')
-    # email = os.getenv('email')
-    # password_email = os.getenv('password_email')
-    # databasename = os.getenv('databasename')
     bot_token = os.getenv('bot_token')
     POSTGRES_DB = os.getenv('POSTGRES_DB')
     POSTGRES_USER = os.getenv('POSTGRES_USER')
     POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD')
     POSTGRES_HOST = os.getenv('POSTGRES_HOST')
     POSTGRES_PORT = os.getenv('POSTGRES_PORT')
-    EMAIL = os.getenv('EMAIL')
-    PASSWORD_EMAIL = os.getenv('PASSWORD_EMAIL')
 
 else:
     raise FileNotFoundError(f"File {dot_env} did not find in {BASE_DIR}")
@@ -127,7 +121,6 @@ DATABASES = {
         'HOST': POSTGRES_HOST
     }
 }
-print("DATABASES =", DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -181,18 +174,6 @@ LOGIN_URL = '/users/'
 
 NULLABLE = {'null': True, 'blank': True}
 
-# для отправки письма
-
-EMAIL_HOST = 'smtp.yandex.com'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = EMAIL
-EMAIL_HOST_PASSWORD = PASSWORD_EMAIL
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
-
-SERVER_EMAIL = EMAIL_HOST_USER
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',  # адрес фронтенд-сервера
 ]
@@ -206,12 +187,6 @@ CORS_ALLOW_ALL_ORIGINS = False
 
 
 # Настройки для Celery
-
-# # URL-адрес брокера сообщений, Redis
-# CELERY_BROKER_URL = 'redis://localhost:6379'
-
-# # URL-адрес брокера результатов, также Redis
-# CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 
 REDIS_HOST = os.getenv('REDIS_HOST')
 REDIS_PORT = os.getenv('REDIS_PORT')
@@ -230,7 +205,6 @@ CELERY_TASK_TRACK_STARTED = True
 
 # Максимальное время на выполнение задачи
 CELERY_TASK_TIME_LIMIT = 30 * 60
-
 
 # Логгирование celery
 LOGGING = {

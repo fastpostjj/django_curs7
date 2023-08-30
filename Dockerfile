@@ -7,15 +7,10 @@ WORKDIR /app
 # Копируем зависимости в контейнер
 COPY requirements.txt /app/
 
-# Копируем файл настроек в контейнер
-# COPY .env .
-# COPY .env /app/.env
-
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Копируем код приложения в контейнер
-# COPY . /app/
 COPY . .
 
 # Команда для запуска приложения при старте контейнера

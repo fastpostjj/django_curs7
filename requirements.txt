@@ -12,6 +12,7 @@ django_celery_beat
 django_filter
 requests
 flake8
+coverage
 
 #Windows
 #psycopg

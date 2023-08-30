@@ -37,20 +37,84 @@
 
 
 ## Начало работы
-Для начала работы необходимо создать пользователей командой python manage.py csu.
-Команда python manage.py new_message создаст периодическую задачу проверки новых сообщений от бота.
+Для начала работы необходимо создать пользователей командой __python manage.py csu__.
+Команда __python manage.py new_message__ создаст периодическую задачу проверки новых сообщений от бота.
 
 Логин пользователя- id в телеграме.
 
-Новому пользователю генерируется пароль и высылается в телеграм.
+Новому пользователю при отправке боту сообщения генерируется пароль и высылается в телеграм.
 Для того, чтобы привычки рассылались пользователю, у него должен быть установлен признак "подписан" (is_subscripted=True).
 
-Настроены периодические задачи по проверке сообщений бота и создании новых пользователей, если они отправили сообщение боту, а также по рассылке привычек по расписанию (также запускаются по ручкам /habits/check_message_bot/ и /habits/send_message_bot/).
+Настроены периодические задачи по проверке сообщений бота и создании новых пользователей, если они отправили сообщение боту, а также по рассылке привычек по расписанию (также запускаются по ручкам __/habits/check_message_bot/__ и __/habits/send_message_bot/__).
 
-Команда python manage.py habits устанавливает задачи по рассылке привычек по расписанию.
+Команда __python manage.py habits__ устанавливает задачи по рассылке привычек по расписанию.
 
 
-Команды для запуска celery и beat:
+## Настройки проекта
+    bot_token - токен бота
+    POSTGRES_USER пользователь базы данных
+    POSTGRES_PASSWORD пароль для базы данных
+    POSTGRES_PORT=5432 порт базы данных
+    POSTGRES_DB название базы данных (для локального запуска база должна быть создана заранее)
+    POSTGRES_HOST=localhost - хост для базы данных для локального запуска
+    REDIS_HOST=localhost - хост для работы редис для локального запуска
+    REDIS_PORT=6379 - порт для работы редис
 
-celery -A config worker -l INFO -P eventlet
-celery -A config beat -l INFO
+    POSTGRES_HOST=db - настройки для запуска из docker-контейнера
+    REDIS_HOST=redis
+
+## Для локального запуска проекта необходимо выполнить следующие команды:
+-   при работе на Linux запустить сервисы postgresql и redis:
+
+    sudo service postgresql start
+
+    sudo service redis-server start
+-   создать базу данных и записать ее название в переменную POSTGRES_DB в .env-файл
+-   установить виртуальное окружение:
+
+    python -m venv venv
+
+    python3 -m venv venv
+-   активировать виртуальное окружение:
+
+    venv/Scripts/activate
+
+    source venv/bin/activate
+-   установить зависимости:
+
+    python -m pip install -r requirements-win.txt
+
+    python3 -m pip install -r requirments.txt
+-   применить миграции:
+
+    python manage.py migrate
+
+-   загрузить данные из дампа:
+
+    python  manage.py loaddata data.json
+
+-   либо работать с пустой базой, тогда нужно создать пользователей:
+
+    python  manage.py csu
+-   запустить проект:
+
+    python  manage.py runserver
+-   в одтельном терминале запустить celery:
+
+    celery -A config worker -l INFO -P eventlet
+    celery -A config worker -l INFO
+-   и beat:
+
+    celery -A config beat -l INFO
+- либо одной командой:
+
+    celery -A config.celery worker --beat --loglevel=info
+
+
+ ## Для запуска приложения из docker-контейнера
+
+  docker-compose up --build
+
+  ## Для запуска тестов
+
+  docker-compose up test

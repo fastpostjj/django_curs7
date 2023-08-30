@@ -14,3 +14,6 @@ user_auth/management/commands/__pycache__/
 user_auth/services/__pycache__/
 .env
 .coverage
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir

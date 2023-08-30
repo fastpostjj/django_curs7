@@ -4,6 +4,7 @@ from user_auth.models import User
 from habits.models import Habits, BotMessages
 from config.settings import BOT_URL, bot_token
 from config.settings import BASE_DIR
+from django.utils import timezone
 import os
 
 
@@ -121,7 +122,6 @@ class Bot_message():
                     )
                     new_message.save()
         else:
-            print("Ответ не подлежит обработке: ", response)
             file_name = str(BASE_DIR) + os.sep + "log.txt"
             with open(file_name, "a", encoding="utf-8") as file:
                 file.write(
@@ -137,9 +137,9 @@ class Bot_message():
         text = kwargs.get('text')
         response = requests.get(url, params={'chat_id': chat_id, 'text': text})
 
-        # file_name = str(BASE_DIR) + os.sep + "log.txt"
+        file_name = str(BASE_DIR) + os.sep + "log.txt"
 
-        # with open(file_name, "a", encoding="utf-8") as file:
-        #     file.write(f"send_message kwargs={kwargs} {chat_id} {text} {response.json()}\n")
+        with open(file_name, "a", encoding="utf-8") as file:
+            file.write(f"{timezone.now()} send_message kwargs={kwargs} {chat_id} {text} {response.json()}\n")
 
         return response.status_code
