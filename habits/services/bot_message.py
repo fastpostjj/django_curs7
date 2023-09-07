@@ -86,9 +86,9 @@ class Bot_message():
                 chat_id=chat_id,
                 text=f"Ваш id {chat_id} добавлен в базу.\n"
                 + f" Вам установлен пароль для доступа к сайту:\n{password}.\n"
-                + f" Вы можете настроить список привычек для рассылки " +
+                + " Вы можете настроить список привычек для рассылки " +
                 "напоминаний.\n"
-                + f" Для начала отправки необходимо установить пользователю " +
+                + " Для начала отправки необходимо установить пользователю " +
                 "статус is_subscripted=True.\n"
             )
         return user
@@ -123,9 +123,10 @@ class Bot_message():
                     new_message.save()
         else:
             file_name = str(BASE_DIR) + os.sep + "log.txt"
+            text = f"{timezone.now()} check new messages: " +\
+                f"Ответ не подлежит обработке: {response}"
             with open(file_name, "a", encoding="utf-8") as file:
-                file.write(
-                    f"check new messages: Ответ не подлежит обработке: {response}")
+                file.write(text)
             return False
 
     def send_message(self, *args, **kwargs):
@@ -139,7 +140,9 @@ class Bot_message():
 
         file_name = str(BASE_DIR) + os.sep + "log.txt"
 
+        text = f"{timezone.now()} send_message kwargs=" +\
+            "{kwargs} {chat_id} {text} {response.json()}\n"
         with open(file_name, "a", encoding="utf-8") as file:
-            file.write(f"{timezone.now()} send_message kwargs={kwargs} {chat_id} {text} {response.json()}\n")
+            file.write(text)
 
         return response.status_code

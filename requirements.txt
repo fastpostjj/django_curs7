@@ -13,6 +13,7 @@ django_filter
 requests
 flake8
 coverage
+gunicorn
 
 #Windows
 #psycopg

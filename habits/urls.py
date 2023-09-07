@@ -2,7 +2,7 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 from habits.views import HabitsListView, HabitsCreateAPIView, \
     HabitsUpdateAPIView, HabitsRetrieveAPIView, \
-    HabitsDestroyAPIView, HabitsPublicListView, CheckMessageBotView,\
+    HabitsDestroyAPIView, HabitsPublicListView, CheckMessageBotView, \
     SendMessagBotView
 
 router = DefaultRouter()

@@ -28,15 +28,13 @@ load_dotenv(dotenv_path=dot_env)
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = \
-    'django-insecure-$jjb9i8**_yjea&!^q$p)==jw$e4kvz)7%(00qx7jlmmf%%ce='
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
+ALLOWED_HOSTS_ = os.getenv('ALLOWED_HOSTS_')
 
-# ALLOWED_HOSTS = ['127.0.0.1']
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = [ALLOWED_HOSTS_]
 
 # Application definition
 
@@ -69,7 +67,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-
     'corsheaders.middleware.CorsMiddleware',
 ]
 
@@ -95,7 +92,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 if os.path.isfile(dot_env):
-    # Использование переменных окружения
     CACHE_ENABLED = os.getenv('CACHE_ENABLED')
     bot_token = os.getenv('bot_token')
     POSTGRES_DB = os.getenv('POSTGRES_DB')
@@ -179,7 +175,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://read-and-write.example.com",  # адрес фронтенд-сервера
-    # и добавьте адрес бэкенд-сервера
+    #  адрес бэкенд-сервера
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False
@@ -245,4 +241,19 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15000),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+}
+
+CELERY_BEAT_SCHEDULE = {
+    'send_telegram_message': {
+        'task': 'habits.tasks.send_habits',  # Путь к задаче
+        'schedule': timedelta(minutes=3),  # Расписание выполнения задачи
+    },
+    'check_telegram_message': {
+        'task': 'habits.tasks.check_message',  # Путь к задаче
+        'schedule': timedelta(minutes=2),  # Расписание выполнения задачи
+    },
+    'telegram_send_one_message_bot': {
+        'task': 'habits.tasks.send_one_message_bot',  # Путь к задаче
+        'schedule': timedelta(minutes=1),  # Расписание выполнения задачи
+    },
 }

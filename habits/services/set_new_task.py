@@ -1,14 +1,5 @@
-import json
-import datetime
-import pytz
-from celery.schedules import crontab, timedelta
-from django.utils import timezone
-from django_celery_beat.models import PeriodicTask, \
-    IntervalSchedule
+from django_celery_beat.models import PeriodicTask
 from habits.models import Habits
-from config.settings import TIME_ZONE
-from config.settings import BASE_DIR
-import os
 from habits.services.services import create_periodic_task
 
 
@@ -23,5 +14,4 @@ def create_task_sending_habits():
     # Определяем временные интервалы для каждой периодичности
     habits = Habits.objects.filter(user__is_subscripted=True)
     for habit in habits:
-        task = create_periodic_task(habit)
-
+        create_periodic_task(habit)

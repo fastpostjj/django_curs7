@@ -63,3 +63,1647 @@ UgyDiLcRXm.
 2023-08-30 21:52:56.243306+00:00 send_message kwargs={'chat_id': 729962006, 'text': 'Список ваших привычек:\n'} 729962006 Список ваших привычек:
  {'ok': True, 'result': {'message_id': 1129, 'from': {'id': 5337848529, 'is_bot': True, 'first_name': 'Bot_testing_skills', 'username': 'new_testing_skills_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'type': 'private'}, 'date': 1693432374, 'text': 'Список ваших привычек:'}}
 2023-08-30 21:52:57.810864+00:00 send_habits
+2023-08-31 16:43:51.623630+00:00 send_habits
+2023-08-31 16:43:51.793950+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 16:43:52.056393+00:00 check_message_bot
+2023-08-31 16:44:47.278317+00:00 check_message_bot
+2023-08-31 16:44:52.189023+00:00 send_habits
+2023-08-31 16:45:47.431271+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 16:45:49.956321+00:00 check_message_bot
+2023-08-31 16:45:55.665444+00:00 send_habits
+2023-08-31 16:46:47.029720+00:00 check_message_bot
+2023-08-31 16:46:48.589955+00:00 send_habits
+2023-08-31 16:47:47.208689+00:00 check_message_bot
+2023-08-31 16:47:51.290997+00:00 send_habits
+2023-08-31 16:48:47.213955+00:00 check_message_bot
+2023-08-31 16:48:53.492461+00:00 send_habits
+2023-08-31 16:49:47.827957+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 16:49:48.395340+00:00 check_message_bot
+2023-08-31 16:49:51.403351+00:00 send_habits
+2023-08-31 16:50:47.301166+00:00 check_message_bot
+2023-08-31 16:50:52.393750+00:00 send_habits
+2023-08-31 16:51:47.386084+00:00 check_message_bot
+2023-08-31 16:51:52.464463+00:00 send_habits
+2023-08-31 16:52:47.526649+00:00 check_message_bot
+2023-08-31 16:52:51.899139+00:00 send_habits
+2023-08-31 16:53:47.563230+00:00 check_message_bot
+2023-08-31 16:53:51.333703+00:00 send_habits
+2023-08-31 16:54:48.725399+00:00 check_message_bot
+2023-08-31 16:54:53.568599+00:00 send_habits
+2023-08-31 16:55:52.997782+00:00 check_message_bot
+2023-08-31 16:55:55.432677+00:00 send_habits
+2023-08-31 16:57:01.821052+00:00 check_message_bot
+2023-08-31 16:57:04.211274+00:00 send_habits
+2023-08-31 16:57:49.020720+00:00 check_message_bot
+2023-08-31 16:57:54.469609+00:00 send_habits
+2023-08-31 16:58:49.180640+00:00 check_message_bot
+2023-08-31 16:58:55.912191+00:00 send_habits
+2023-08-31 16:59:49.042863+00:00 check_message_bot
+2023-08-31 16:59:56.302033+00:00 send_habits
+2023-08-31 17:00:49.282625+00:00 check_message_bot
+2023-08-31 17:00:51.724759+00:00 send_habits
+2023-08-31 17:01:49.130217+00:00 check_message_bot
+2023-08-31 17:01:51.412001+00:00 send_habits
+2023-08-31 17:02:49.221761+00:00 check_message_bot
+2023-08-31 17:02:49.570909+00:00 send_habits
+2023-08-31 17:03:49.314082+00:00 check_message_bot
+2023-08-31 17:03:49.488999+00:00 send_habits
+2023-08-31 17:04:49.863335+00:00 check_message_bot
+2023-08-31 17:04:52.477007+00:00 send_habits
+2023-08-31 17:05:49.399993+00:00 check_message_bot
+2023-08-31 17:05:49.514502+00:00 send_habits
+2023-08-31 17:06:49.658506+00:00 check_message_bot
+2023-08-31 17:06:52.660349+00:00 send_habits
+2023-08-31 17:07:49.505217+00:00 check_message_bot
+2023-08-31 17:07:52.750151+00:00 send_habits
+2023-08-31 17:08:49.594775+00:00 check_message_bot
+2023-08-31 17:08:52.279607+00:00 send_habits
+2023-08-31 17:09:50.365147+00:00 check_message_bot
+2023-08-31 17:09:56.308870+00:00 send_habits
+2023-08-31 17:10:50.397660+00:00 check_message_bot
+2023-08-31 17:10:50.457847+00:00 send_habits
+2023-08-31 17:11:51.274611+00:00 check_message_bot
+2023-08-31 17:11:55.784305+00:00 send_habits
+2023-08-31 17:12:51.558506+00:00 check_message_bot
+2023-08-31 17:12:54.616454+00:00 send_habits
+2023-08-31 17:13:51.403188+00:00 check_message_bot
+2023-08-31 17:13:54.746154+00:00 send_habits
+2023-08-31 17:14:50.996617+00:00 check_message_bot
+2023-08-31 17:14:53.373778+00:00 send_habits
+2023-08-31 17:15:53.259324+00:00 check_message_bot
+2023-08-31 17:15:55.757087+00:00 send_habits
+2023-08-31 17:16:51.865769+00:00 check_message_bot
+2023-08-31 17:16:52.223384+00:00 send_habits
+2023-08-31 17:17:51.801744+00:00 check_message_bot
+2023-08-31 17:17:54.492265+00:00 send_habits
+2023-08-31 17:18:52.206285+00:00 check_message_bot
+2023-08-31 17:18:53.050928+00:00 send_habits
+2023-08-31 17:19:54.152093+00:00 check_message_bot
+2023-08-31 17:20:00.197804+00:00 send_habits
+2023-08-31 17:20:52.478705+00:00 check_message_bot
+2023-08-31 17:20:54.652915+00:00 send_habits
+2023-08-31 17:21:53.702064+00:00 check_message_bot
+2023-08-31 17:21:56.616580+00:00 send_habits
+2023-08-31 17:23:09.600657+00:00 check_message_bot
+2023-08-31 17:23:21.942016+00:00 send_habits
+2023-08-31 17:23:53.797103+00:00 check_message_bot
+2023-08-31 17:24:12.683544+00:00 send_habits
+2023-08-31 17:24:57.629726+00:00 check_message_bot
+2023-08-31 17:25:07.792891+00:00 send_habits
+2023-08-31 17:25:58.729700+00:00 check_message_bot
+2023-08-31 17:26:12.868064+00:00 send_habits
+2023-08-31 17:27:00.671791+00:00 check_message_bot
+2023-08-31 17:27:19.137046+00:00 send_habits
+2023-08-31 17:27:59.302576+00:00 check_message_bot
+2023-08-31 17:28:04.116664+00:00 send_habits
+2023-08-31 17:29:01.988243+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 17:29:04.983906+00:00 send_habits
+2023-08-31 17:29:05.402396+00:00 check_message_bot
+2023-08-31 17:30:00.034151+00:00 check_message_bot
+2023-08-31 17:30:05.624597+00:00 send_habits
+2023-08-31 17:30:56.045515+00:00 check_message_bot
+2023-08-31 17:31:34.949288+00:00 send_habits
+2023-08-31 17:31:57.459205+00:00 check_message_bot
+2023-08-31 17:32:02.787874+00:00 send_habits
+2023-08-31 17:32:57.082090+00:00 check_message_bot
+2023-08-31 17:33:01.325924+00:00 send_habits
+2023-08-31 17:34:02.175383+00:00 check_message_bot
+2023-08-31 17:34:05.753226+00:00 send_habits
+2023-08-31 17:34:58.724407+00:00 check_message_bot
+2023-08-31 17:35:00.307289+00:00 send_habits
+2023-08-31 17:35:59.998494+00:00 check_message_bot
+2023-08-31 17:36:24.298373+00:00 send_habits
+2023-08-31 17:36:59.020157+00:00 check_message_bot
+2023-08-31 17:37:12.752723+00:00 send_habits
+2023-08-31 17:37:59.548075+00:00 check_message_bot
+2023-08-31 17:38:02.148687+00:00 send_habits
+2023-08-31 17:38:58.150547+00:00 check_message_bot
+2023-08-31 17:39:01.038133+00:00 send_habits
+2023-08-31 17:54:52.919715+00:00 check_message_bot
+2023-08-31 17:54:58.643077+00:00 send_habits
+2023-08-31 17:55:47.057297+00:00 check_message_bot
+2023-08-31 17:56:46.483312+00:00 check_message_bot
+2023-08-31 17:57:23.367984+00:00 send_habits
+2023-08-31 17:57:51.610365+00:00 check_message_bot
+2023-08-31 17:58:48.824109+00:00 send_habits
+2023-08-31 17:58:53.189109+00:00 check_message_bot
+2023-08-31 17:59:02.349756+00:00 send_habits
+2023-08-31 17:59:51.813381+00:00 check_message_bot
+2023-08-31 18:00:54.794803+00:00 check_message_bot
+2023-08-31 18:01:07.057313+00:00 send_habits
+2023-08-31 18:01:07.562632+00:00 send_habits
+2023-08-31 18:01:49.063918+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:01:49.565530+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:01:50.039184+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:01:50.730859+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:01:52.218912+00:00 send_habits
+2023-08-31 18:01:54.968879+00:00 check_message_bot
+2023-08-31 18:02:00.074176+00:00 send_habits
+2023-08-31 18:02:55.542423+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:02:57.453429+00:00 check_message_bot
+2023-08-31 18:03:04.826309+00:00 send_habits
+2023-08-31 18:03:55.208346+00:00 check_message_bot
+2023-08-31 18:04:02.828476+00:00 send_habits
+2023-08-31 18:04:55.404306+00:00 check_message_bot
+2023-08-31 18:05:03.231467+00:00 send_habits
+2023-08-31 18:05:18.828230+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:05:19.278445+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:05:19.742656+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:05:20.223856+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:05:20.816901+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:05:22.277489+00:00 send_habits
+2023-08-31 18:05:55.237213+00:00 check_message_bot
+2023-08-31 18:06:01.785260+00:00 send_habits
+2023-08-31 18:06:55.413293+00:00 check_message_bot
+2023-08-31 18:07:00.591365+00:00 send_habits
+2023-08-31 18:07:55.720160+00:00 check_message_bot
+2023-08-31 18:08:11.942451+00:00 send_habits
+2023-08-31 18:08:55.659411+00:00 check_message_bot
+2023-08-31 18:08:55.763581+00:00 send_habits
+2023-08-31 18:09:55.981178+00:00 check_message_bot
+2023-08-31 18:09:59.944780+00:00 send_habits
+2023-08-31 18:10:55.867455+00:00 check_message_bot
+2023-08-31 18:11:01.478802+00:00 send_habits
+2023-08-31 18:11:55.988126+00:00 check_message_bot
+2023-08-31 18:11:58.946513+00:00 send_habits
+2023-08-31 18:12:56.101049+00:00 check_message_bot
+2023-08-31 18:13:00.211336+00:00 send_habits
+2023-08-31 18:13:56.021703+00:00 check_message_bot
+2023-08-31 18:14:02.798127+00:00 send_habits
+2023-08-31 18:14:56.133614+00:00 check_message_bot
+2023-08-31 18:14:58.901373+00:00 send_habits
+2023-08-31 18:15:57.766937+00:00 check_message_bot
+2023-08-31 18:16:04.948727+00:00 send_habits
+2023-08-31 18:16:56.756538+00:00 check_message_bot
+2023-08-31 18:17:00.129560+00:00 send_habits
+2023-08-31 18:17:56.787474+00:00 check_message_bot
+2023-08-31 18:17:59.770802+00:00 send_habits
+2023-08-31 18:18:56.839919+00:00 check_message_bot
+2023-08-31 18:18:59.375701+00:00 send_habits
+2023-08-31 18:19:56.904336+00:00 check_message_bot
+2023-08-31 18:20:00.284286+00:00 send_habits
+2023-08-31 18:20:57.024918+00:00 check_message_bot
+2023-08-31 18:21:00.930144+00:00 send_habits
+2023-08-31 18:21:57.136451+00:00 check_message_bot
+2023-08-31 18:22:00.887263+00:00 send_habits
+2023-08-31 18:22:57.168977+00:00 check_message_bot
+2023-08-31 18:22:59.671846+00:00 send_habits
+2023-08-31 18:23:57.154805+00:00 check_message_bot
+2023-08-31 18:24:00.109837+00:00 send_habits
+2023-08-31 18:24:57.327636+00:00 check_message_bot
+2023-08-31 18:24:59.858777+00:00 send_habits
+2023-08-31 18:25:57.660489+00:00 check_message_bot
+2023-08-31 18:26:01.057932+00:00 send_habits
+2023-08-31 18:26:57.550900+00:00 check_message_bot
+2023-08-31 18:27:02.918706+00:00 send_habits
+2023-08-31 18:27:57.488978+00:00 check_message_bot
+2023-08-31 18:28:01.754128+00:00 send_habits
+2023-08-31 18:28:57.639862+00:00 check_message_bot
+2023-08-31 18:29:00.184264+00:00 send_habits
+2023-08-31 18:29:57.575321+00:00 check_message_bot
+2023-08-31 18:30:01.942351+00:00 send_habits
+2023-08-31 18:30:57.809354+00:00 check_message_bot
+2023-08-31 18:31:04.758516+00:00 send_habits
+2023-08-31 18:31:57.922328+00:00 check_message_bot
+2023-08-31 18:32:03.573275+00:00 send_habits
+2023-08-31 18:32:57.758536+00:00 check_message_bot
+2023-08-31 18:33:00.230203+00:00 send_habits
+2023-08-31 18:33:58.251515+00:00 check_message_bot
+2023-08-31 18:33:58.343865+00:00 send_habits
+2023-08-31 18:34:57.938573+00:00 check_message_bot
+2023-08-31 18:35:03.658397+00:00 send_habits
+2023-08-31 18:44:52.182571+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:44:53.495654+00:00 check_message_bot
+2023-08-31 18:44:55.221900+00:00 send_habits
+2023-08-31 18:45:49.014968+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:45:49.045119+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:45:49.716104+00:00 check_message_bot
+2023-08-31 18:45:49.770879+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:45:50.609880+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:45:51.053404+00:00 send_habits
+2023-08-31 18:45:52.593585+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:45:53.344260+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:45:53.879368+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:45:54.420808+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:45:56.059481+00:00 send_habits
+2023-08-31 18:46:49.290068+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:46:49.752268+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:46:51.238883+00:00 check_message_bot
+2023-08-31 18:46:56.639915+00:00 send_habits
+2023-08-31 18:47:36.798244+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:47:37.306444+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:47:37.725756+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:47:38.246592+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:47:38.732576+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:47:39.412693+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:47:40.880044+00:00 send_habits
+2023-08-31 18:47:49.172686+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:47:49.206569+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:47:49.917391+00:00 check_message_bot
+2023-08-31 18:47:54.062110+00:00 send_habits
+2023-08-31 18:48:49.403642+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:48:49.475875+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:48:49.547137+00:00 check_message_bot
+2023-08-31 18:48:53.451175+00:00 send_habits
+2023-08-31 18:49:49.248601+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:49:49.271960+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:49:49.571790+00:00 check_message_bot
+2023-08-31 18:49:53.662952+00:00 send_habits
+2023-08-31 18:50:49.232854+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:50:49.341113+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:50:49.683235+00:00 check_message_bot
+2023-08-31 18:50:49.992340+00:00 send_habits
+2023-08-31 18:51:49.499059+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:51:49.556837+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:51:49.683430+00:00 check_message_bot
+2023-08-31 18:52:06.600174+00:00 send_habits
+2023-08-31 18:52:49.349813+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:52:49.374526+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:52:50.336818+00:00 check_message_bot
+2023-08-31 18:52:54.411430+00:00 send_habits
+2023-08-31 18:53:49.751970+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:53:49.779563+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:53:49.923308+00:00 check_message_bot
+2023-08-31 18:53:55.045369+00:00 send_habits
+2023-08-31 18:54:53.210918+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:54:53.247939+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:54:53.311699+00:00 check_message_bot
+2023-08-31 18:54:53.530958+00:00 send_habits
+2023-08-31 18:55:50.986611+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:55:51.039222+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:55:51.397653+00:00 check_message_bot
+2023-08-31 18:55:52.064951+00:00 send_habits
+2023-08-31 18:56:49.942847+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:56:49.974214+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:56:50.514403+00:00 check_message_bot
+2023-08-31 18:56:56.093266+00:00 send_habits
+2023-08-31 18:57:50.030693+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:57:50.106025+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:57:50.184115+00:00 check_message_bot
+2023-08-31 18:57:51.176639+00:00 send_habits
+2023-08-31 18:58:50.040339+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:58:50.061353+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:58:51.725694+00:00 check_message_bot
+2023-08-31 18:58:55.297839+00:00 send_habits
+2023-08-31 18:59:49.911004+00:00 check_message_bot
+2023-08-31 18:59:49.944415+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 18:59:49.975341+00:00 send_one_message_bot kwargs= {}
+2023-08-31 18:59:50.406538+00:00 send_habits
+2023-08-31 19:00:49.999673+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:00:50.027811+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:00:50.071747+00:00 check_message_bot
+2023-08-31 19:00:50.473536+00:00 send_habits
+2023-08-31 19:01:50.074542+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:01:50.086367+00:00 check_message_bot
+2023-08-31 19:01:50.115505+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:01:50.461986+00:00 send_habits
+2023-08-31 19:02:50.043897+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:02:50.069424+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:02:50.099173+00:00 check_message_bot
+2023-08-31 19:02:50.566093+00:00 send_habits
+2023-08-31 19:03:50.130460+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:03:50.153589+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:03:50.248804+00:00 check_message_bot
+2023-08-31 19:03:51.062945+00:00 send_habits
+2023-08-31 19:04:50.071742+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:04:50.094760+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:04:50.112752+00:00 check_message_bot
+2023-08-31 19:04:50.821664+00:00 send_habits
+2023-08-31 19:05:50.209401+00:00 check_message_bot
+2023-08-31 19:05:50.890477+00:00 send_habits
+2023-08-31 19:05:52.614955+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:05:52.641405+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:06:50.193898+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:06:50.223912+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:06:50.245795+00:00 check_message_bot
+2023-08-31 19:06:50.904004+00:00 send_habits
+2023-08-31 19:07:50.259699+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:07:50.293017+00:00 check_message_bot
+2023-08-31 19:07:50.300090+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:07:50.867742+00:00 send_habits
+2023-08-31 19:08:50.688723+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:08:50.698081+00:00 check_message_bot
+2023-08-31 19:08:50.708585+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:08:53.538936+00:00 send_habits
+2023-08-31 19:09:50.431149+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:09:50.466802+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:09:50.480175+00:00 check_message_bot
+2023-08-31 19:09:54.390100+00:00 send_habits
+2023-08-31 19:10:50.749036+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:10:50.754752+00:00 check_message_bot
+2023-08-31 19:10:50.770113+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:10:54.476123+00:00 send_habits
+2023-08-31 19:11:50.655271+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:11:50.679035+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:11:50.732165+00:00 check_message_bot
+2023-08-31 19:11:53.486850+00:00 send_habits
+2023-08-31 19:12:50.765499+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:12:50.817711+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:12:50.872576+00:00 check_message_bot
+2023-08-31 19:12:55.822077+00:00 send_habits
+2023-08-31 19:13:50.708298+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:13:50.789390+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:13:50.871905+00:00 check_message_bot
+2023-08-31 19:13:54.909518+00:00 send_habits
+2023-08-31 19:14:50.972268+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:14:51.120360+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:14:51.274070+00:00 check_message_bot
+2023-08-31 19:14:54.554930+00:00 send_habits
+2023-08-31 19:15:51.042969+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:15:51.071823+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:15:55.919384+00:00 send_habits
+2023-08-31 19:16:02.159296+00:00 check_message_bot
+2023-08-31 19:16:50.883311+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:16:50.904228+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:16:51.026743+00:00 check_message_bot
+2023-08-31 19:16:52.914932+00:00 send_habits
+2023-08-31 19:17:50.986866+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:17:51.044624+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:17:51.044729+00:00 check_message_bot
+2023-08-31 19:17:55.046079+00:00 send_habits
+2023-08-31 19:18:51.065023+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:18:51.077026+00:00 check_message_bot
+2023-08-31 19:18:51.105283+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:18:51.266948+00:00 send_habits
+2023-08-31 19:19:51.075438+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:19:51.099659+00:00 check_message_bot
+2023-08-31 19:19:51.112598+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:19:54.162278+00:00 send_habits
+2023-08-31 19:20:51.344608+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:20:51.376262+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:20:51.455181+00:00 check_message_bot
+2023-08-31 19:20:53.001120+00:00 send_habits
+2023-08-31 19:21:51.300946+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:21:51.310896+00:00 check_message_bot
+2023-08-31 19:21:51.341316+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:21:53.901212+00:00 send_habits
+2023-08-31 19:22:51.391906+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:22:51.416174+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:22:51.485187+00:00 check_message_bot
+2023-08-31 19:22:56.079412+00:00 send_habits
+2023-08-31 19:23:51.617415+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:23:51.647545+00:00 check_message_bot
+2023-08-31 19:23:51.676291+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:23:54.700685+00:00 send_habits
+2023-08-31 19:24:51.529771+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:24:51.569993+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:24:51.638300+00:00 check_message_bot
+2023-08-31 19:24:53.451336+00:00 send_habits
+2023-08-31 19:25:51.580754+00:00 check_message_bot
+2023-08-31 19:25:51.689191+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:25:51.714446+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:25:54.627055+00:00 send_habits
+2023-08-31 19:26:51.715825+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:26:51.805581+00:00 check_message_bot
+2023-08-31 19:26:51.929083+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:26:56.429887+00:00 send_habits
+2023-08-31 19:27:51.611501+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:27:51.672390+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:27:51.672718+00:00 check_message_bot
+2023-08-31 19:27:54.260159+00:00 send_habits
+2023-08-31 19:28:52.071423+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:28:52.082248+00:00 check_message_bot
+2023-08-31 19:28:52.104700+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:28:55.143204+00:00 send_habits
+2023-08-31 19:29:51.874288+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:29:51.904711+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:29:52.045064+00:00 check_message_bot
+2023-08-31 19:29:54.258012+00:00 send_habits
+2023-08-31 19:30:51.852746+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:30:51.890031+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:30:51.905670+00:00 check_message_bot
+2023-08-31 19:30:55.934358+00:00 send_habits
+2023-08-31 19:31:53.203279+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:31:53.232462+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:31:53.702277+00:00 check_message_bot
+2023-08-31 19:31:53.750082+00:00 send_habits
+2023-08-31 19:32:52.272830+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:32:52.309429+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:32:52.512225+00:00 check_message_bot
+2023-08-31 19:32:53.156011+00:00 send_habits
+2023-08-31 19:33:52.928651+00:00 send_habits
+2023-08-31 19:33:52.997677+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:33:53.024161+00:00 check_message_bot
+2023-08-31 19:33:53.060331+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:34:53.560745+00:00 send_habits
+2023-08-31 19:34:54.142300+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:34:54.170411+00:00 check_message_bot
+2023-08-31 19:34:54.193655+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:35:52.997044+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:35:53.050017+00:00 check_message_bot
+2023-08-31 19:35:53.069327+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:35:53.903841+00:00 send_habits
+2023-08-31 19:36:53.380479+00:00 send_habits
+2023-08-31 19:36:53.918852+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:36:53.959946+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:36:54.319128+00:00 check_message_bot
+2023-08-31 19:37:52.711250+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:37:52.763146+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:37:52.805589+00:00 send_habits
+2023-08-31 19:37:53.102998+00:00 check_message_bot
+2023-08-31 19:38:52.738451+00:00 send_habits
+2023-08-31 19:38:53.432308+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:38:53.467772+00:00 check_message_bot
+2023-08-31 19:38:53.476095+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:39:52.835909+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:39:52.872108+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:39:53.029827+00:00 send_habits
+2023-08-31 19:39:53.770627+00:00 check_message_bot
+2023-08-31 19:40:52.670272+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:40:52.715508+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:40:52.736151+00:00 check_message_bot
+2023-08-31 19:40:52.844940+00:00 send_habits
+2023-08-31 19:41:52.769131+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:41:52.825181+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:41:53.137724+00:00 send_habits
+2023-08-31 19:41:53.730806+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:41:53.894507+00:00 check_message_bot
+2023-08-31 19:42:52.699306+00:00 check_message_bot
+2023-08-31 19:42:52.701189+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:42:52.755137+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:42:52.928618+00:00 send_habits
+2023-08-31 19:43:52.930390+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:43:53.028516+00:00 check_message_bot
+2023-08-31 19:43:53.029658+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:43:53.276497+00:00 send_habits
+2023-08-31 19:44:52.788440+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:44:52.830066+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:44:53.073771+00:00 send_habits
+2023-08-31 19:44:53.143901+00:00 check_message_bot
+2023-08-31 19:45:53.013116+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:45:53.062652+00:00 send_one_message_bot kwargs= {}
+2023-08-31 19:45:53.063232+00:00 check_message_bot
+2023-08-31 19:45:53.370918+00:00 send_habits
+2023-08-31 19:46:53.237249+00:00 check_message_bot
+2023-08-31 19:46:53.313320+00:00 send_habits
+2023-08-31 19:46:54.167925+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-08-31 19:46:54.217918+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:33:45.079796+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:33:45.142304+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:33:45.385834+00:00 check_message_bot
+2023-09-05 19:33:54.705390+00:00 send_habits
+2023-09-05 19:34:44.732115+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:34:44.747900+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:35:44.828563+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:35:44.828563+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:35:45.262749+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:35:45.375754+00:00 check_message_bot
+2023-09-05 19:36:45.132980+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:36:45.136829+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:36:45.185837+00:00 send_habits
+2023-09-05 19:37:44.789174+00:00 check_message_bot
+2023-09-05 19:37:44.826537+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:37:44.832549+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:38:44.914746+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:38:44.914746+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:39:44.906026+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:39:44.906026+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:39:44.937113+00:00 check_message_bot
+2023-09-05 19:39:45.046493+00:00 send_habits
+2023-09-05 19:40:44.832360+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:40:44.847834+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:41:44.838266+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:41:44.838266+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:41:44.929916+00:00 check_message_bot
+2023-09-05 19:42:44.915609+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:42:44.915609+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:42:45.062126+00:00 send_habits
+2023-09-05 19:43:45.122731+00:00 check_message_bot
+2023-09-05 19:43:45.126720+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:43:45.130711+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:44:44.892293+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:44:44.907819+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:45:44.855502+00:00 check_message_bot
+2023-09-05 19:45:44.886754+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:45:44.898456+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:45:45.117253+00:00 send_habits
+2023-09-05 19:46:45.571264+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:46:45.577262+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:47:44.811937+00:00 check_message_bot
+2023-09-05 19:47:44.827380+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:47:44.827380+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:48:44.979396+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:48:44.979396+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:48:45.072185+00:00 send_habits
+2023-09-05 19:49:44.787042+00:00 check_message_bot
+2023-09-05 19:49:44.857954+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:49:44.857954+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:50:44.895098+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:50:44.910568+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:51:45.135002+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:51:45.142825+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:51:45.166830+00:00 check_message_bot
+2023-09-05 19:51:45.656370+00:00 send_habits
+2023-09-05 19:52:45.020866+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:52:45.028911+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:53:45.532731+00:00 check_message_bot
+2023-09-05 19:53:45.532731+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:53:45.532731+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:54:44.979858+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:54:44.995491+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:54:45.109416+00:00 send_habits
+2023-09-05 19:55:45.029221+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:55:45.044706+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:55:45.044706+00:00 check_message_bot
+2023-09-05 19:56:44.988415+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:56:45.004025+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:57:44.797647+00:00 check_message_bot
+2023-09-05 19:57:44.993542+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:57:45.009173+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:57:45.223184+00:00 send_habits
+2023-09-05 19:58:44.968007+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:58:44.968007+00:00 send_one_message_bot kwargs= {}
+2023-09-05 19:59:44.846630+00:00 check_message_bot
+2023-09-05 19:59:44.951391+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 19:59:44.951391+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:00:45.118229+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:00:45.118229+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:00:45.185230+00:00 send_habits
+2023-09-05 20:01:44.881606+00:00 check_message_bot
+2023-09-05 20:01:44.984418+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:01:45.000049+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:02:45.041147+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:02:45.056867+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:03:44.918761+00:00 check_message_bot
+2023-09-05 20:03:45.019584+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:03:45.025582+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:03:45.251031+00:00 send_habits
+2023-09-05 20:04:45.221860+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:04:45.236243+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:05:44.853685+00:00 check_message_bot
+2023-09-05 20:05:44.985606+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:05:44.985606+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:06:45.160867+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:06:45.165020+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:06:45.366144+00:00 send_habits
+2023-09-05 20:07:45.075098+00:00 check_message_bot
+2023-09-05 20:07:45.126093+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:07:45.126093+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:08:45.261000+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:08:45.264759+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:09:45.037074+00:00 check_message_bot
+2023-09-05 20:09:45.148332+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:09:45.153312+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:09:45.479211+00:00 send_habits
+2023-09-05 20:10:45.222416+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:10:45.228409+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:11:44.977867+00:00 check_message_bot
+2023-09-05 20:11:45.086802+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:11:45.091824+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:12:45.242767+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:12:45.242767+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:12:45.343466+00:00 send_habits
+2023-09-05 20:13:45.024529+00:00 check_message_bot
+2023-09-05 20:13:45.158197+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:13:45.166374+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:14:45.107791+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:14:45.123400+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:15:44.920130+00:00 check_message_bot
+2023-09-05 20:15:45.182691+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:15:45.182691+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:15:45.412627+00:00 send_habits
+2023-09-05 20:16:45.135603+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:16:45.135603+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:17:44.895642+00:00 check_message_bot
+2023-09-05 20:17:45.091995+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:17:45.107682+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:18:45.177937+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:18:45.182797+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:18:45.392535+00:00 send_habits
+2023-09-05 20:19:45.473617+00:00 check_message_bot
+2023-09-05 20:19:45.566826+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:19:45.582446+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:20:45.145475+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:20:45.150471+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:21:45.050022+00:00 check_message_bot
+2023-09-05 20:21:45.336734+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:21:45.336734+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:21:45.388530+00:00 send_habits
+2023-09-05 20:22:45.176833+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:22:45.181837+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:23:45.037737+00:00 check_message_bot
+2023-09-05 20:23:45.190594+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:23:45.190594+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:24:45.394302+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:24:45.394302+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:24:45.436081+00:00 send_habits
+2023-09-05 20:25:44.936978+00:00 check_message_bot
+2023-09-05 20:25:45.171039+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:25:45.176051+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:26:45.479633+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:26:45.495239+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:27:44.949738+00:00 check_message_bot
+2023-09-05 20:27:45.225061+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:27:45.225061+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:27:45.418568+00:00 send_habits
+2023-09-05 20:28:45.273077+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:28:45.273077+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:29:44.996826+00:00 check_message_bot
+2023-09-05 20:29:45.167623+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:29:45.175456+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:30:45.275306+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:30:45.275306+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:30:45.425931+00:00 send_habits
+2023-09-05 20:31:44.904137+00:00 check_message_bot
+2023-09-05 20:31:45.181131+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:31:45.196737+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:32:45.464239+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:32:45.464239+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:33:45.037400+00:00 check_message_bot
+2023-09-05 20:33:45.229700+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:33:45.245329+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:33:45.565862+00:00 send_habits
+2023-09-05 20:34:45.388381+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:34:45.404005+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:35:44.944054+00:00 check_message_bot
+2023-09-05 20:35:45.248490+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:35:45.248490+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:36:45.330554+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:36:45.346058+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:36:45.495253+00:00 send_habits
+2023-09-05 20:37:45.422324+00:00 check_message_bot
+2023-09-05 20:37:45.565186+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:37:45.565186+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:38:47.586404+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:38:47.586404+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:39:45.502672+00:00 send_habits
+2023-09-05 20:39:46.238404+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:39:46.238404+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:39:46.254030+00:00 check_message_bot
+2023-09-05 20:40:45.315138+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:40:45.319144+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:41:44.983293+00:00 check_message_bot
+2023-09-05 20:41:45.328869+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:41:45.344566+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:42:45.365247+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:42:45.375089+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:42:45.519866+00:00 send_habits
+2023-09-05 20:43:45.241639+00:00 check_message_bot
+2023-09-05 20:43:45.355479+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:43:45.355479+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:44:45.472922+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:44:45.472922+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:45:45.021217+00:00 check_message_bot
+2023-09-05 20:45:45.365805+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:45:45.381543+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:45:45.419077+00:00 send_habits
+2023-09-05 20:46:45.412383+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:46:45.412383+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:47:45.148508+00:00 check_message_bot
+2023-09-05 20:47:45.354863+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:47:45.354863+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:48:45.399142+00:00 send_habits
+2023-09-05 20:48:45.823954+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:48:45.839397+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:49:45.021501+00:00 check_message_bot
+2023-09-05 20:49:45.478486+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:49:45.478486+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:50:45.403163+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:50:45.418603+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:51:45.001602+00:00 check_message_bot
+2023-09-05 20:51:45.498452+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:51:45.514070+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:51:45.582374+00:00 send_habits
+2023-09-05 20:52:45.500567+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:52:45.500567+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:53:45.072960+00:00 check_message_bot
+2023-09-05 20:53:45.438918+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:53:45.438918+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:54:45.502972+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:54:45.518590+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:54:45.928944+00:00 send_habits
+2023-09-05 20:55:45.019520+00:00 check_message_bot
+2023-09-05 20:55:45.433276+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:55:45.433276+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:56:45.531891+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:56:45.531891+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:57:45.009342+00:00 check_message_bot
+2023-09-05 20:57:45.552080+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:57:45.552080+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:57:45.590782+00:00 send_habits
+2023-09-05 20:58:45.500705+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:58:45.500705+00:00 send_one_message_bot kwargs= {}
+2023-09-05 20:59:45.005524+00:00 check_message_bot
+2023-09-05 20:59:45.484354+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 20:59:45.484354+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:00:45.433548+00:00 send_habits
+2023-09-05 21:00:45.515964+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:00:45.531585+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:01:45.034318+00:00 check_message_bot
+2023-09-05 21:01:45.530616+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:01:45.546166+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:02:45.516603+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:02:45.516603+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:03:45.508538+00:00 check_message_bot
+2023-09-05 21:03:45.535310+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:03:45.539298+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:03:45.605647+00:00 send_habits
+2023-09-05 21:04:45.573932+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:04:45.589381+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:05:45.052606+00:00 check_message_bot
+2023-09-05 21:05:45.528354+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:05:45.528354+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:06:45.451201+00:00 send_habits
+2023-09-05 21:06:45.612837+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:06:45.612837+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:07:45.035251+00:00 check_message_bot
+2023-09-05 21:07:45.547352+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:07:45.547352+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:12:23.242463+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:12:23.242463+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:12:23.417340+00:00 check_message_bot
+2023-09-05 21:12:23.456136+00:00 send_habits
+2023-09-05 21:13:23.091571+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:13:23.107002+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:38:45.475146+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:38:45.475146+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:38:45.587440+00:00 check_message_bot
+2023-09-05 21:39:45.496633+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:39:45.496633+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:39:46.030923+00:00 send_habits
+2023-09-05 21:40:45.498135+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:40:45.498135+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:40:46.001844+00:00 check_message_bot
+2023-09-05 21:41:45.465859+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:41:45.465859+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:42:45.613910+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:42:45.613910+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:42:45.725675+00:00 check_message_bot
+2023-09-05 21:42:45.853036+00:00 send_habits
+2023-09-05 21:43:45.562720+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:43:45.578356+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:44:45.581343+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:44:45.596773+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:44:45.629693+00:00 check_message_bot
+2023-09-05 21:45:45.841861+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:45:45.841861+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:45:45.985824+00:00 send_habits
+2023-09-05 21:46:45.653212+00:00 check_message_bot
+2023-09-05 21:46:45.737315+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:46:45.737315+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:47:45.754854+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:47:45.754854+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:48:45.630970+00:00 check_message_bot
+2023-09-05 21:48:45.793693+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:48:45.809315+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:48:45.970600+00:00 send_habits
+2023-09-05 21:49:45.838889+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:49:45.838889+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:50:45.666573+00:00 check_message_bot
+2023-09-05 21:50:45.765435+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:50:45.765435+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:51:45.853807+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:51:45.853807+00:00 send_one_message_bot kwargs= {}
+2023-09-05 21:51:45.948549+00:00 send_habits
+2023-09-05 21:52:45.656774+00:00 check_message_bot
+2023-09-05 21:52:45.769480+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-05 21:52:45.784915+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:00:48.362922+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:00:48.394169+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:00:48.649970+00:00 check_message_bot
+2023-09-06 01:00:51.257831+00:00 send_habits
+2023-09-06 01:01:45.336331+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:01:45.336331+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:02:45.382390+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:02:45.382390+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:02:45.442947+00:00 check_message_bot
+2023-09-06 01:03:45.392981+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:03:45.392981+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:03:45.679576+00:00 send_habits
+2023-09-06 01:04:45.414715+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:04:45.414715+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:04:45.430145+00:00 check_message_bot
+2023-09-06 01:05:45.350918+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:05:45.350918+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:06:45.417418+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:06:45.417418+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:06:45.544819+00:00 check_message_bot
+2023-09-06 01:06:45.610363+00:00 send_habits
+2023-09-06 01:07:45.387455+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:07:45.402894+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:08:45.359479+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:08:45.359479+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:08:45.472208+00:00 check_message_bot
+2023-09-06 01:09:45.480907+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:09:45.480907+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:09:45.625641+00:00 send_habits
+2023-09-06 01:10:45.374142+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:10:45.374142+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:10:45.434435+00:00 check_message_bot
+2023-09-06 01:12:38.411278+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:12:38.411278+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:12:45.540024+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:12:45.555643+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:12:45.604404+00:00 check_message_bot
+2023-09-06 01:12:45.702831+00:00 send_habits
+2023-09-06 01:13:45.408003+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:13:45.423427+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:14:45.441259+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:14:45.441259+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:14:45.456787+00:00 check_message_bot
+2023-09-06 01:15:45.646428+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:15:45.646428+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:15:45.726828+00:00 send_habits
+2023-09-06 01:16:45.543890+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:16:45.543890+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:16:45.593802+00:00 check_message_bot
+2023-09-06 01:17:45.460985+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:17:45.460985+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:18:45.554853+00:00 check_message_bot
+2023-09-06 01:18:45.554853+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:18:45.554853+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:18:45.748125+00:00 send_habits
+2023-09-06 01:19:45.455553+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:19:45.470989+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:20:45.552576+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:20:45.552576+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:20:45.552576+00:00 check_message_bot
+2023-09-06 01:21:45.551584+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:21:45.551584+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:21:45.741188+00:00 send_habits
+2023-09-06 01:22:45.512036+00:00 check_message_bot
+2023-09-06 01:22:45.527509+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:22:45.543138+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:23:45.513241+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:23:45.528869+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:24:45.590452+00:00 check_message_bot
+2023-09-06 01:24:45.606079+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:24:45.621750+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:24:45.751407+00:00 send_habits
+2023-09-06 01:25:45.573356+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:25:45.573356+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:26:45.518679+00:00 check_message_bot
+2023-09-06 01:26:45.534300+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:26:45.534300+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:27:45.611351+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:27:45.611351+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:27:45.653035+00:00 send_habits
+2023-09-06 01:28:45.510507+00:00 check_message_bot
+2023-09-06 01:28:45.547686+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:28:45.552701+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:29:45.637800+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:29:45.637800+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:30:45.656638+00:00 check_message_bot
+2023-09-06 01:30:45.674843+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:30:45.674843+00:00 send_one_message_bot kwargs= {}
+2023-09-06 01:30:45.775900+00:00 send_habits
+2023-09-06 01:31:45.693332+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 01:31:45.693332+00:00 send_one_message_bot kwargs= {}
+2023-09-06 02:08:39.274537+00:00 send_habits
+2023-09-06 02:08:43.140952+00:00 check_message_bot
+2023-09-06 02:08:43.156384+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 02:08:43.156384+00:00 send_one_message_bot kwargs= {}
+2023-09-06 02:09:38.735776+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 02:09:38.751407+00:00 send_one_message_bot kwargs= {}
+2023-09-06 04:27:59.427395+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 04:27:59.438892+00:00 send_one_message_bot kwargs= {}
+2023-09-06 04:28:03.611635+00:00 check_message_bot
+2023-09-06 04:28:04.920400+00:00 send_habits
+2023-09-06 04:28:58.902077+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 04:28:58.917533+00:00 send_one_message_bot kwargs= {}
+2023-09-06 04:28:59.065644+00:00 check_message_bot
+2023-09-06 04:29:58.967076+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 04:29:58.967076+00:00 send_one_message_bot kwargs= {}
+2023-09-06 07:30:58.432866+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 07:30:58.432866+00:00 send_one_message_bot kwargs= {}
+2023-09-06 07:31:00.958524+00:00 check_message_bot
+2023-09-06 07:31:01.560891+00:00 send_habits
+2023-09-06 16:37:41.032253+00:00 send_habits
+2023-09-06 16:37:42.572951+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:37:42.588589+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:37:44.673093+00:00 check_message_bot
+2023-09-06 16:38:41.061828+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:38:41.061828+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:39:38.499519+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:39:38.515143+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:39:38.515143+00:00 check_message_bot
+2023-09-06 16:40:38.201860+00:00 send_habits
+2023-09-06 16:40:52.134076+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:40:52.149531+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:41:39.141517+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:41:39.149522+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:41:39.242310+00:00 check_message_bot
+2023-09-06 16:42:38.531047+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:42:38.531047+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:43:38.028594+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:43:38.028594+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:43:38.378406+00:00 check_message_bot
+2023-09-06 16:43:38.525553+00:00 send_habits
+2023-09-06 16:44:39.733659+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:44:39.741264+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:45:38.821043+00:00 check_message_bot
+2023-09-06 16:45:39.350956+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:45:39.366497+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:46:38.165976+00:00 send_habits
+2023-09-06 16:46:39.383804+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:46:39.383804+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:47:37.954613+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:47:37.967348+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:47:38.602614+00:00 check_message_bot
+2023-09-06 16:48:38.293045+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:48:38.301337+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:49:38.438309+00:00 check_message_bot
+2023-09-06 16:49:38.463330+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:49:38.463330+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:49:38.548341+00:00 send_habits
+2023-09-06 16:50:46.391506+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:50:46.396542+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:51:39.448548+00:00 check_message_bot
+2023-09-06 16:51:41.099372+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:51:41.114926+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:52:38.903964+00:00 send_habits
+2023-09-06 16:52:39.319784+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:52:39.319784+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:53:38.917063+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 16:53:38.917063+00:00 send_one_message_bot kwargs= {}
+2023-09-06 16:53:39.020032+00:00 check_message_bot
+2023-09-06 17:03:54.528356+00:00 send_habits
+2023-09-06 17:03:55.625820+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 17:03:55.625820+00:00 send_one_message_bot kwargs= {}
+2023-09-06 17:03:55.691577+00:00 check_message_bot
+2023-09-06 17:04:49.696432+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 17:04:49.711995+00:00 send_one_message_bot kwargs= {}
+2023-09-06 17:12:21.238757+00:00 send_habits
+2023-09-06 17:12:23.023474+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 17:12:23.023474+00:00 send_one_message_bot kwargs= {}
+2023-09-06 17:12:23.324927+00:00 check_message_bot
+2023-09-06 17:13:22.160357+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 17:13:22.175915+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:07:07.401675+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:07:07.401675+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:07:07.432931+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:07:07.448551+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:07:08.988081+00:00 send_habits
+2023-09-06 18:07:09.291271+00:00 check_message_bot
+2023-09-06 18:08:06.804775+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:08:06.804775+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:09:04.494137+00:00 check_message_bot
+2023-09-06 18:09:06.712273+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:09:06.712273+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:10:07.391815+00:00 send_habits
+2023-09-06 18:10:09.451403+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:10:09.451403+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:11:04.381569+00:00 check_message_bot
+2023-09-06 18:11:07.021042+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:11:07.036574+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:12:08.124903+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:12:08.124903+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:13:04.696830+00:00 check_message_bot
+2023-09-06 18:13:06.883902+00:00 send_habits
+2023-09-06 18:13:07.217225+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:13:07.217225+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:14:10.384867+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:14:10.384867+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:15:05.177179+00:00 check_message_bot
+2023-09-06 18:15:06.807558+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:15:06.807558+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:16:06.807734+00:00 send_habits
+2023-09-06 18:16:08.043608+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:16:08.043608+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:17:04.455464+00:00 check_message_bot
+2023-09-06 18:17:07.844762+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:17:07.844762+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:18:08.154874+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:18:08.154874+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:19:05.986124+00:00 check_message_bot
+2023-09-06 18:19:06.796611+00:00 send_habits
+2023-09-06 18:19:08.092521+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:19:08.107965+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:20:08.301767+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:20:08.309665+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:21:04.693587+00:00 check_message_bot
+2023-09-06 18:21:08.690394+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:21:08.690394+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:22:06.986905+00:00 send_habits
+2023-09-06 18:22:08.069396+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:22:08.084875+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:23:05.628092+00:00 check_message_bot
+2023-09-06 18:23:14.635123+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:23:14.643128+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:24:08.165029+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:24:08.173027+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:25:04.517965+00:00 check_message_bot
+2023-09-06 18:25:06.929135+00:00 send_habits
+2023-09-06 18:25:09.830089+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:25:09.838088+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:26:07.405781+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:26:07.405781+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:27:06.188741+00:00 check_message_bot
+2023-09-06 18:27:06.989979+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:27:06.989979+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:28:06.966071+00:00 send_habits
+2023-09-06 18:28:13.221984+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:28:13.221984+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:29:04.585541+00:00 check_message_bot
+2023-09-06 18:29:06.734552+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:29:06.734552+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:30:09.172623+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:30:09.172623+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:31:04.854147+00:00 check_message_bot
+2023-09-06 18:31:06.813008+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:31:06.813008+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:31:07.001964+00:00 send_habits
+2023-09-06 18:32:08.240076+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:32:08.255594+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:33:05.206057+00:00 check_message_bot
+2023-09-06 18:33:07.443060+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:33:07.443060+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:34:06.848109+00:00 send_habits
+2023-09-06 18:34:08.214597+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:34:08.214597+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:35:03.637551+00:00 check_message_bot
+2023-09-06 18:35:06.733041+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:35:06.733041+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:36:06.850381+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:36:06.854513+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:37:03.655281+00:00 check_message_bot
+2023-09-06 18:37:06.789059+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:37:06.789059+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:37:06.987225+00:00 send_habits
+2023-09-06 18:38:06.921263+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:38:06.921263+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:39:03.626870+00:00 check_message_bot
+2023-09-06 18:39:06.872487+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:39:06.872487+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:40:06.883765+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:40:06.888751+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:40:07.004464+00:00 send_habits
+2023-09-06 18:41:03.681172+00:00 check_message_bot
+2023-09-06 18:41:06.784866+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:41:06.800326+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:42:07.285768+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:42:07.285768+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:43:03.698853+00:00 check_message_bot
+2023-09-06 18:43:06.804805+00:00 send_habits
+2023-09-06 18:43:06.880918+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:43:06.880918+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:44:07.041695+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:44:07.057287+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:45:03.874383+00:00 check_message_bot
+2023-09-06 18:45:06.870515+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:45:06.901950+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:46:06.825402+00:00 send_habits
+2023-09-06 18:46:07.055582+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:46:07.055582+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:47:03.719168+00:00 check_message_bot
+2023-09-06 18:47:06.904188+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:47:06.904188+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:48:07.140461+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:48:07.156078+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:49:03.738865+00:00 check_message_bot
+2023-09-06 18:49:06.878203+00:00 send_habits
+2023-09-06 18:49:06.969399+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:49:06.969399+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:50:07.182901+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:50:07.182901+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:51:03.768292+00:00 check_message_bot
+2023-09-06 18:51:06.987155+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:51:06.992424+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:52:07.600077+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:52:07.751221+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:52:07.787247+00:00 send_habits
+2023-09-06 18:53:03.845918+00:00 check_message_bot
+2023-09-06 18:53:06.994725+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:53:06.999953+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:54:07.086277+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:54:07.090132+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:55:03.705170+00:00 check_message_bot
+2023-09-06 18:55:06.816544+00:00 send_habits
+2023-09-06 18:55:07.087305+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:55:07.092699+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:56:07.069836+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:56:07.073688+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:57:03.708772+00:00 check_message_bot
+2023-09-06 18:57:07.024720+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:57:07.031063+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:58:06.810842+00:00 send_habits
+2023-09-06 18:58:07.100851+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:58:07.107839+00:00 send_one_message_bot kwargs= {}
+2023-09-06 18:59:14.112488+00:00 check_message_bot
+2023-09-06 18:59:17.683068+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 18:59:17.686066+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:00:07.210086+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:00:07.218094+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:01:03.672768+00:00 check_message_bot
+2023-09-06 19:01:06.814630+00:00 send_habits
+2023-09-06 19:01:07.361729+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:01:07.364713+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:02:07.196425+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:02:07.205417+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:03:03.656998+00:00 check_message_bot
+2023-09-06 19:03:07.322861+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:03:07.327141+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:04:06.816418+00:00 send_habits
+2023-09-06 19:04:07.084140+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:04:07.088589+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:05:03.673340+00:00 check_message_bot
+2023-09-06 19:05:07.069534+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:05:07.073520+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:06:07.220162+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:06:07.227161+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:07:03.758562+00:00 check_message_bot
+2023-09-06 19:07:06.973540+00:00 send_habits
+2023-09-06 19:07:07.091659+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:07:07.096525+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:08:07.238595+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:08:07.243614+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:09:03.742015+00:00 check_message_bot
+2023-09-06 19:09:07.165405+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:09:07.170387+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:10:06.802814+00:00 send_habits
+2023-09-06 19:10:07.225839+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:10:07.229834+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:11:03.740334+00:00 check_message_bot
+2023-09-06 19:11:07.157180+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:11:07.164234+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:22:13.255348+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:22:13.260279+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:22:13.380311+00:00 check_message_bot
+2023-09-06 19:22:13.525156+00:00 send_habits
+2023-09-06 19:23:13.119186+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:23:13.119186+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:24:13.200614+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:24:13.216383+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:24:13.639916+00:00 check_message_bot
+2023-09-06 19:25:13.266144+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:25:13.266144+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:25:13.488809+00:00 send_habits
+2023-09-06 19:26:13.226642+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:26:13.226642+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:26:13.350573+00:00 check_message_bot
+2023-09-06 19:27:13.236703+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:27:13.241697+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:28:13.274255+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:28:13.278250+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:28:13.366656+00:00 check_message_bot
+2023-09-06 19:28:13.561601+00:00 send_habits
+2023-09-06 19:29:13.194030+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:29:13.209954+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:30:13.305905+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:30:13.309903+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:30:13.386709+00:00 check_message_bot
+2023-09-06 19:31:13.384372+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:31:13.384372+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:31:13.603035+00:00 send_habits
+2023-09-06 19:32:13.347901+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:32:13.347901+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:32:13.384220+00:00 check_message_bot
+2023-09-06 19:33:13.375817+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:33:13.379859+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:34:13.353152+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:34:13.353152+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:34:13.401719+00:00 check_message_bot
+2023-09-06 19:34:13.672796+00:00 send_habits
+2023-09-06 19:35:13.277513+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:35:13.282525+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:36:13.293369+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:36:13.309020+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:36:13.375160+00:00 check_message_bot
+2023-09-06 19:37:13.393263+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:37:13.393263+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:37:13.507882+00:00 send_habits
+2023-09-06 19:38:13.297667+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:38:13.297667+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:38:13.345832+00:00 check_message_bot
+2023-09-06 19:39:13.361508+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:39:13.361508+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:40:13.363778+00:00 check_message_bot
+2023-09-06 19:40:13.379383+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:40:13.400054+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:40:13.559513+00:00 send_habits
+2023-09-06 19:41:13.360963+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:41:13.366998+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:42:13.462261+00:00 check_message_bot
+2023-09-06 19:42:13.462261+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:42:13.477634+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:43:13.405406+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:43:13.410408+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:43:13.667451+00:00 send_habits
+2023-09-06 19:44:13.401475+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:44:13.406478+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:44:13.451125+00:00 check_message_bot
+2023-09-06 19:45:13.326772+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:45:13.326772+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:46:13.425671+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:46:13.425671+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:46:13.570097+00:00 check_message_bot
+2023-09-06 19:46:13.682100+00:00 send_habits
+2023-09-06 19:47:13.387944+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:47:13.387944+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:48:13.429163+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:48:13.429163+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:48:13.479025+00:00 check_message_bot
+2023-09-06 19:49:13.448703+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:49:13.464300+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:49:13.601006+00:00 send_habits
+2023-09-06 19:50:13.387279+00:00 check_message_bot
+2023-09-06 19:50:13.402711+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:50:13.402711+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:51:13.745339+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:51:13.745339+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:52:13.368423+00:00 check_message_bot
+2023-09-06 19:52:13.456286+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:52:13.456286+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:52:13.600940+00:00 send_habits
+2023-09-06 19:53:13.476222+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:53:13.491859+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:54:13.409844+00:00 check_message_bot
+2023-09-06 19:54:13.452393+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:54:13.456389+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:55:13.480784+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:55:13.496413+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:55:13.577023+00:00 send_habits
+2023-09-06 19:56:13.621366+00:00 check_message_bot
+2023-09-06 19:56:13.660235+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:56:13.666243+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:57:13.562265+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:57:13.562265+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:58:13.402676+00:00 check_message_bot
+2023-09-06 19:58:13.558121+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:58:13.558121+00:00 send_one_message_bot kwargs= {}
+2023-09-06 19:58:13.613834+00:00 send_habits
+2023-09-06 19:59:13.621804+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 19:59:13.637230+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:00:13.365481+00:00 check_message_bot
+2023-09-06 20:00:13.479861+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:00:13.479861+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:01:13.602662+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:01:13.608652+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:01:13.792875+00:00 send_habits
+2023-09-06 20:02:13.672214+00:00 check_message_bot
+2023-09-06 20:02:13.757234+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:02:13.764235+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:03:13.857542+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:03:13.858493+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:04:13.579019+00:00 check_message_bot
+2023-09-06 20:04:13.603885+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:04:13.608893+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:04:13.753134+00:00 send_habits
+2023-09-06 20:05:14.798622+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:05:14.807012+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:06:13.487136+00:00 check_message_bot
+2023-09-06 20:06:13.689992+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:06:13.695994+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:07:13.594114+00:00 send_habits
+2023-09-06 20:07:13.750560+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:07:13.750560+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:08:13.392312+00:00 check_message_bot
+2023-09-06 20:08:13.641282+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:08:13.645436+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:09:13.666730+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:09:13.670726+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:10:13.569125+00:00 check_message_bot
+2023-09-06 20:10:13.659123+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:10:13.664149+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:10:13.752131+00:00 send_habits
+2023-09-06 20:11:13.653127+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:11:13.657131+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:12:13.487170+00:00 check_message_bot
+2023-09-06 20:12:13.647167+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:12:13.652176+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:13:13.906665+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:13:13.912651+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:13:14.123865+00:00 send_habits
+2023-09-06 20:14:13.614434+00:00 check_message_bot
+2023-09-06 20:14:13.717455+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:14:13.724171+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:15:13.806819+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:15:13.815827+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:16:14.044183+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:16:14.051047+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:16:14.082762+00:00 send_habits
+2023-09-06 20:16:14.094789+00:00 check_message_bot
+2023-09-06 20:17:13.883212+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:17:13.889077+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:18:13.965119+00:00 check_message_bot
+2023-09-06 20:18:14.004830+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:18:14.014874+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:19:13.581199+00:00 send_habits
+2023-09-06 20:19:14.101339+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:19:14.101339+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:20:14.646819+00:00 check_message_bot
+2023-09-06 20:20:14.653844+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:20:14.658819+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:21:15.274237+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:21:15.278230+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:22:14.343277+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:22:14.348356+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:22:14.539346+00:00 check_message_bot
+2023-09-06 20:22:14.680652+00:00 send_habits
+2023-09-06 20:23:22.215197+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:23:22.230728+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:24:14.875933+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:24:14.875933+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:24:15.185524+00:00 check_message_bot
+2023-09-06 20:25:13.526357+00:00 send_habits
+2023-09-06 20:25:14.266288+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:25:14.266288+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:26:13.494658+00:00 check_message_bot
+2023-09-06 20:26:13.995282+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:26:14.010931+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:27:13.996288+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:27:14.011740+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:28:13.827497+00:00 send_habits
+2023-09-06 20:28:20.364868+00:00 check_message_bot
+2023-09-06 20:28:26.086109+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:28:26.096114+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:29:14.092295+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:29:14.100202+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:30:13.478186+00:00 check_message_bot
+2023-09-06 20:30:14.085043+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:30:14.085043+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:31:13.814590+00:00 send_habits
+2023-09-06 20:31:19.723931+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:31:19.726800+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:32:13.777340+00:00 check_message_bot
+2023-09-06 20:32:15.938006+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:32:15.947495+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:33:14.206641+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:33:14.212635+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:34:13.682806+00:00 send_habits
+2023-09-06 20:34:23.241386+00:00 check_message_bot
+2023-09-06 20:34:25.109843+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:34:25.125292+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:35:14.157048+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:35:14.172504+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:36:14.189193+00:00 check_message_bot
+2023-09-06 20:36:15.328074+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:36:15.336062+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:37:13.742879+00:00 send_habits
+2023-09-06 20:37:25.350955+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:37:25.366136+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:38:15.388609+00:00 check_message_bot
+2023-09-06 20:38:15.475597+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:38:15.481587+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:39:15.556357+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:39:15.561650+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:40:16.674537+00:00 send_habits
+2023-09-06 20:40:21.019030+00:00 check_message_bot
+2023-09-06 20:40:26.097311+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:40:26.105350+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:41:15.093694+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:41:15.107379+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:42:16.289842+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:42:16.295844+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:42:16.302847+00:00 check_message_bot
+2023-09-06 20:43:13.711456+00:00 send_habits
+2023-09-06 20:43:19.230211+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:43:19.234238+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:44:13.812660+00:00 check_message_bot
+2023-09-06 20:44:17.426766+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:44:17.429607+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:45:16.322084+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:45:16.328081+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:46:14.680878+00:00 send_habits
+2023-09-06 20:46:25.427579+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:46:25.427579+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:46:25.562889+00:00 check_message_bot
+2023-09-06 20:47:36.473284+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:47:36.473284+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:48:26.777252+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:48:26.777252+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:48:27.426651+00:00 check_message_bot
+2023-09-06 20:49:13.912948+00:00 send_habits
+2023-09-06 20:49:19.234902+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:49:19.241897+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:50:19.020519+00:00 check_message_bot
+2023-09-06 20:50:19.100022+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:50:19.106184+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:51:14.762056+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:51:14.762056+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:52:13.627409+00:00 send_habits
+2023-09-06 20:52:28.931775+00:00 check_message_bot
+2023-09-06 20:52:29.713701+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:52:29.731325+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:53:15.587838+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:53:15.587838+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:54:13.797973+00:00 check_message_bot
+2023-09-06 20:54:14.737098+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:54:14.737098+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:55:13.584330+00:00 send_habits
+2023-09-06 20:55:56.390429+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:55:56.390429+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:56:13.711632+00:00 check_message_bot
+2023-09-06 20:56:24.156452+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:56:24.159647+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:57:31.156256+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:57:31.159452+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:58:13.486795+00:00 check_message_bot
+2023-09-06 20:58:13.646295+00:00 send_habits
+2023-09-06 20:58:14.656677+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:58:14.672304+00:00 send_one_message_bot kwargs= {}
+2023-09-06 20:59:20.315564+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 20:59:20.315564+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:00:14.484532+00:00 check_message_bot
+2023-09-06 21:00:15.821436+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:00:15.821436+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:01:13.571817+00:00 send_habits
+2023-09-06 21:01:14.694656+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:01:14.710111+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:02:13.421346+00:00 check_message_bot
+2023-09-06 21:02:14.679010+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:02:14.685983+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:03:14.716991+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:03:14.721641+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:04:13.524639+00:00 check_message_bot
+2023-09-06 21:04:13.684963+00:00 send_habits
+2023-09-06 21:04:14.663988+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:04:14.663988+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:05:14.713163+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:05:14.728679+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:06:13.473371+00:00 check_message_bot
+2023-09-06 21:06:14.674236+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:06:14.674236+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:07:13.666039+00:00 send_habits
+2023-09-06 21:07:14.806888+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:07:14.822334+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:08:13.531280+00:00 check_message_bot
+2023-09-06 21:08:14.738829+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:08:14.738829+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:09:14.852309+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:09:14.857313+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:10:13.462471+00:00 check_message_bot
+2023-09-06 21:10:13.625094+00:00 send_habits
+2023-09-06 21:10:14.755095+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:10:14.755095+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:11:14.882525+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:11:14.882525+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:12:13.471867+00:00 check_message_bot
+2023-09-06 21:12:14.839364+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:12:14.839364+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:13:13.589907+00:00 send_habits
+2023-09-06 21:13:14.855800+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:13:14.860760+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:14:13.815021+00:00 check_message_bot
+2023-09-06 21:14:14.979859+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:14:14.984862+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:15:14.894987+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:15:14.910632+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:16:13.889845+00:00 check_message_bot
+2023-09-06 21:16:13.986786+00:00 send_habits
+2023-09-06 21:16:14.903567+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:16:14.903567+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:17:14.886294+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:17:14.886294+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:18:13.536928+00:00 check_message_bot
+2023-09-06 21:18:14.915853+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:18:14.915853+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:19:13.607581+00:00 send_habits
+2023-09-06 21:19:14.958860+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:19:14.958860+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:20:13.508241+00:00 check_message_bot
+2023-09-06 21:20:14.910947+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:20:14.910947+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:21:14.982510+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:21:14.982510+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:22:13.556890+00:00 check_message_bot
+2023-09-06 21:22:13.721790+00:00 send_habits
+2023-09-06 21:22:14.940914+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:22:14.940914+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:23:14.960297+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:23:14.960297+00:00 send_one_message_bot kwargs= {}
+2023-09-06 21:24:13.544979+00:00 check_message_bot
+2023-09-06 21:24:14.954751+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-06 21:24:14.954751+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:03:14.618494+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:03:14.884121+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:03:14.946861+00:00 check_message_bot
+2023-09-07 04:03:18.670064+00:00 send_habits
+2023-09-07 04:04:11.416791+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:04:11.416791+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:05:11.592778+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:05:11.592778+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:05:11.721742+00:00 check_message_bot
+2023-09-07 04:06:11.506055+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:06:11.506055+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:06:12.166931+00:00 send_habits
+2023-09-07 04:07:11.767581+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:07:11.767581+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:07:12.005734+00:00 check_message_bot
+2023-09-07 04:08:11.481089+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:08:11.481089+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:09:11.641563+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:09:11.647568+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:09:12.295087+00:00 check_message_bot
+2023-09-07 04:09:12.572616+00:00 send_habits
+2023-09-07 04:10:11.475374+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:10:11.490997+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:11:11.570413+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:11:11.586096+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:11:11.700152+00:00 check_message_bot
+2023-09-07 04:12:11.525193+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:12:11.540813+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:12:11.873695+00:00 send_habits
+2023-09-07 04:21:40.736863+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:21:40.738925+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:21:40.938197+00:00 check_message_bot
+2023-09-07 04:21:41.536667+00:00 send_habits
+2023-09-07 04:22:40.623995+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:22:40.628989+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:23:40.637619+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:23:40.637619+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:23:40.798892+00:00 check_message_bot
+2023-09-07 04:24:40.697147+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:24:40.703138+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:24:40.894494+00:00 send_habits
+2023-09-07 04:25:40.656688+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:25:40.660540+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:25:40.791501+00:00 check_message_bot
+2023-09-07 04:26:40.719094+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:26:40.726123+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:27:41.172087+00:00 send_habits
+2023-09-07 04:27:41.926831+00:00 check_message_bot
+2023-09-07 04:27:41.999332+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:27:42.004342+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:36:49.785320+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:36:49.785320+00:00 send_one_message_bot kwargs= {}
+2023-09-07 04:36:49.990342+00:00 check_message_bot
+2023-09-07 04:36:50.091443+00:00 send_habits
+2023-09-07 04:37:49.715934+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 04:37:49.715934+00:00 send_one_message_bot kwargs= {}
+2023-09-07 13:56:24.244785+00:00 send_habits
+2023-09-07 13:56:25.064239+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 13:56:25.064239+00:00 send_one_message_bot kwargs= {}
+2023-09-07 13:56:25.146341+00:00 check_message_bot
+2023-09-07 13:58:32.211532+00:00 check_message_bot
+2023-09-07 13:58:32.451818+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 13:58:32.451818+00:00 send_one_message_bot kwargs= {}
+2023-09-07 13:59:14.810979+00:00 send_habits
+2023-09-07 13:59:16.173068+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 13:59:16.188700+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:00:16.330496+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:00:16.346047+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:00:16.598808+00:00 check_message_bot
+2023-09-07 14:02:30.118801+00:00 send_habits
+2023-09-07 14:02:30.182084+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:02:30.184454+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:02:30.282423+00:00 check_message_bot
+2023-09-07 14:03:14.537100+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:03:14.537100+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:04:14.639041+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:04:14.639041+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:04:14.781129+00:00 check_message_bot
+2023-09-07 14:05:14.633897+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:05:14.633897+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:05:14.808505+00:00 send_habits
+2023-09-07 14:06:14.641398+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:06:14.656982+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:06:14.746977+00:00 check_message_bot
+2023-09-07 14:07:15.170191+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:07:15.170191+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:08:26.268565+00:00 send_habits
+2023-09-07 14:09:14.946328+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:09:14.946328+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:10:29.759882+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:10:29.759882+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:10:30.501622+00:00 check_message_bot
+2023-09-07 14:11:15.834462+00:00 send_habits
+2023-09-07 14:11:18.225975+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:11:18.231400+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:12:15.352931+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:12:15.352931+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:12:15.794213+00:00 check_message_bot
+2023-09-07 14:13:15.008781+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:13:15.008781+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:14:15.088875+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:14:15.104351+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:14:16.466496+00:00 check_message_bot
+2023-09-07 14:14:17.255430+00:00 send_habits
+2023-09-07 14:15:15.242225+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:15:15.246256+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:16:15.232237+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:16:15.232237+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:16:15.736369+00:00 check_message_bot
+2023-09-07 14:17:15.378966+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:17:15.383023+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:17:15.501656+00:00 send_habits
+2023-09-07 14:18:15.477237+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:18:15.477237+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:18:15.738299+00:00 check_message_bot
+2023-09-07 14:19:15.155664+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:19:15.159238+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:20:15.228345+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:20:15.244015+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:20:15.707166+00:00 check_message_bot
+2023-09-07 14:20:15.782059+00:00 send_habits
+2023-09-07 14:21:16.097438+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:21:16.097438+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:22:14.908929+00:00 check_message_bot
+2023-09-07 14:22:15.407873+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:22:15.407873+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:23:15.260718+00:00 send_habits
+2023-09-07 14:23:15.518806+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:23:15.518806+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:24:18.714965+00:00 check_message_bot
+2023-09-07 14:24:19.830057+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:24:19.830057+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:25:15.390169+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:25:15.390169+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:26:17.799506+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 14:26:17.799506+00:00 send_one_message_bot kwargs= {}
+2023-09-07 14:26:18.238341+00:00 send_habits
+2023-09-07 14:26:18.629836+00:00 check_message_bot
+2023-09-07 16:29:17.779856+00:00 send_message kwargs={kwargs} {chat_id} {text} {response.json()}
+2023-09-07 16:29:17.779856+00:00 send_one_message_bot kwargs= {}
+2023-09-07 16:29:18.827172+00:00 send_habits
+2023-09-07 16:29:19.147663+00:00 check_message_bot

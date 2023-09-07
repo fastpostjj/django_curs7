@@ -1,7 +1,5 @@
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from django.shortcuts import render
+from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework import viewsets
-
 from user_auth.models import User
 from user_auth.serializer import UserSerializer, MyTokenObtainPairSerializer
 
@@ -13,7 +11,6 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
 
 
-
 class MyTokenObtainPairView(TokenObtainPairView):
-# представление (view) для получения JWT-токена.
+    """представление (view) для получения JWT-токена."""
     serializer_class = MyTokenObtainPairSerializer

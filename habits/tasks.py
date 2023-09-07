@@ -3,7 +3,6 @@ from config.celery import app
 from config.settings import BASE_DIR
 from django.utils import timezone
 import os
-import json
 from habits.services.services import Bot_message
 from habits.services.set_new_task import create_task_sending_habits
 

@@ -26,6 +26,7 @@ class BotMessageAdmin(admin.ModelAdmin):
         'user'
     )
 
+
 @admin.register(Habits)
 class HabitsAdmin(admin.ModelAdmin):
     list_display = (
