@@ -108,7 +108,7 @@
     celery -A config beat -l INFO
 - либо одной командой:
 
-    celery -A config.celery worker --beat --loglevel=info
+    celery -A config.celery worker --beat --loglevel=info -D
 
 
  ## Для запуска приложения из docker-контейнера
