@@ -36,6 +36,7 @@ ALLOWED_HOSTS_ = os.getenv('ALLOWED_HOSTS_')
 
 ALLOWED_HOSTS = [ALLOWED_HOSTS_]
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -55,7 +56,6 @@ INSTALLED_APPS = [
 
     "user_auth",
     'habits',
-
 ]
 
 MIDDLEWARE = [
@@ -251,9 +251,5 @@ CELERY_BEAT_SCHEDULE = {
     'check_telegram_message': {
         'task': 'habits.tasks.check_message',  # Путь к задаче
         'schedule': timedelta(minutes=2),  # Расписание выполнения задачи
-    },
-    'telegram_send_one_message_bot': {
-        'task': 'habits.tasks.send_one_message_bot',  # Путь к задаче
-        'schedule': timedelta(minutes=1),  # Расписание выполнения задачи
     },
 }

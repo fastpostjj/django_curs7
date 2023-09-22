@@ -1,12 +1,20 @@
 stages:
   - deploy
+  - test
 
-Deploy to prod:
+Deploy to stage:
   stage: deploy
   script:
     - cp $ENV_STAGE .env
     - bash deployment_scripts.sh
-    only:
-    - master
+
+
+test_stage:
+  stage: test
+  script:
+    - cp $ENV_STAGE .env
+    - bash deployment_scripts.sh
+    - python3 manage.py test
+
   tags:
     - prod
