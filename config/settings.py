@@ -31,11 +31,13 @@ load_dotenv(dotenv_path=dot_env)
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = bool(os.getenv('DEBUG'))
+
 ALLOWED_HOSTS_ = os.getenv('ALLOWED_HOSTS_')
 
-ALLOWED_HOSTS = [ALLOWED_HOSTS_]
 
+# ALLOWED_HOSTS = [ALLOWED_HOSTS_]
+ALLOWED_HOSTS = [ ]
 
 # Application definition
 
