@@ -36,8 +36,8 @@ DEBUG = bool(os.getenv('DEBUG'))
 ALLOWED_HOSTS_ = os.getenv('ALLOWED_HOSTS_')
 
 
-# ALLOWED_HOSTS = [ALLOWED_HOSTS_]
-ALLOWED_HOSTS = [ ]
+ALLOWED_HOSTS = [ALLOWED_HOSTS_]
+# ALLOWED_HOSTS = [ ]
 
 # Application definition
 
@@ -254,4 +254,8 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'habits.tasks.check_message',  # Путь к задаче
         'schedule': timedelta(minutes=2),  # Расписание выполнения задачи
     },
+    # 'send_one_telegram_message': {
+    #     'task': 'habits.tasks.send_one_message_bot',  # Путь к задаче
+    #     'schedule': timedelta(minutes=2),  # Расписание выполнения задачи
+    # },
 }

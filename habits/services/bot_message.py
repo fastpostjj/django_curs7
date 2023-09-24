@@ -141,7 +141,7 @@ class Bot_message():
         file_name = str(BASE_DIR) + os.sep + "log.txt"
 
         text = f"{timezone.now()} send_message kwargs=" +\
-            "{kwargs} {chat_id} {text} {response.json()}\n"
+            f"{kwargs} {chat_id} {text} {response.json()}\n"
         with open(file_name, "a", encoding="utf-8") as file:
             file.write(text)
 

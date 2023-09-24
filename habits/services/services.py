@@ -4,7 +4,7 @@ import pytz
 from django.utils import timezone
 from django_celery_beat.models import PeriodicTask, \
     IntervalSchedule
-from config.settings import TIME_ZONE
+from config.settings import TIME_ZONE, CELERY_BEAT_SCHEDULE
 
 
 def check_message_bot():
@@ -53,6 +53,8 @@ def del_periodic_task(habit):
     # Если задача с таким именем существует - удаляем ее
     if task_habit:
         task_habit.delete()
+        if name in CELERY_BEAT_SCHEDULE:
+            CELERY_BEAT_SCHEDULE.pop([name], None)
 
 
 def create_periodic_task(habit):
@@ -94,6 +96,16 @@ def create_periodic_task(habit):
                 'text': text
             }),
         )
+        CELERY_BEAT_SCHEDULE[name] = {
+                'task': 'habits.tasks.send_one_message_bot',  # Путь к задаче
+                'schedule': schedule,  # Расписание выполнения задачи
+                'kwargs': json.dumps(
+                    {
+                        'chat_id': chat_id,
+                        'text': text
+                    }
+                    )
+            }
     return task_habit
 
 

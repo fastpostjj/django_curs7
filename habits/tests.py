@@ -1,8 +1,8 @@
 from datetime import timedelta
+from unittest.mock import patch
 from rest_framework import status
 from rest_framework.test import APITestCase
 from django.urls import reverse
-
 from habits.models import Habits
 from user_auth.models import User
 from django_celery_beat.models import PeriodicTask
@@ -423,10 +423,22 @@ class TestBot(APITestCase):
         self.client.credentials(
             HTTP_AUTHORIZATION=f'Bearer {self.access_token}')
 
-    def test_check_message(self):
+    @patch('habits.services.bot_message.Bot_message.send_message')
+    def test_check_message(self, mock_send_message):
         response = self.client.get(reverse("check_message"))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # mock_send_message.assert_called_with(chat_id=self.user.chat_id, text='Список ваших привычек:\n')
 
-    def test_send_message(self):
+    @patch('habits.services.bot_message.Bot_message.send_message')
+    def test_send_message(self, mock_send_message):
         response = self.client.get(reverse("send_message"))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # mock_send_message.assert_called_with(chat_id=self.user.chat_id, text='expected_text')
+
+    # def test_check_message(self):
+    #     response = self.client.get(reverse("check_message"))
+    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    # def test_send_message(self):
+    #     response = self.client.get(reverse("send_message"))
+    #     self.assertEqual(response.status_code, status.HTTP_200_OK)

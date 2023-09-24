@@ -18,3 +18,4 @@ celerybeat-schedule.bak
 celerybeat-schedule.dat
 celerybeat-schedule.dir
 celery_state.db
+log.txt
