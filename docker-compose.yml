@@ -54,7 +54,8 @@ services:
     build: .
     container_name: celery
     command: >
-      bash -c "celery -A config.celery worker --beat -l DEBUG  -S django"
+      bash -c "celery -A config.celery worker --beat "
+      # bash -c "celery -A config.celery worker --beat -l DEBUG  -S django"
     volumes:
       - ./.env:/app/.env
       - .:/app

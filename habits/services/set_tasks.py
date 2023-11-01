@@ -1,5 +1,3 @@
-# from datetime import datetime, timedelta
-# from django.utils import timezone
 from django_celery_beat.models import PeriodicTask, \
     IntervalSchedule
 

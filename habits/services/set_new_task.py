@@ -20,7 +20,6 @@ def create_task_sending_habits():
 
             # добавляем в расписание
             if name not in CELERY_BEAT_SCHEDULE:
-                print("task=", task, "task.kwargs=", task.kwargs)
                 CELERY_BEAT_SCHEDULE[name] = {
                     'task': 'habits.tasks.send_one_message_bot',  # Путь к задаче
                     'schedule': schedule,  # Расписание выполнения задачи
@@ -33,3 +32,5 @@ def create_task_sending_habits():
                 }
         except PeriodicTask.DoesNotExist:
             create_periodic_task(habit)
+    # print("CELERY_BEAT_SCHEDULE=", CELERY_BEAT_SCHEDULE)
+    return habits

@@ -1,4 +1,4 @@
-## Курсовой проект "Трекер полезных привычек"
+## Проект "Трекер полезных привычек"
 
 Бэкенд-часть SPA веб-приложения.
 
@@ -99,7 +99,7 @@
 -   запустить проект:
 
     python  manage.py runserver
--   в одтельном терминале запустить celery:
+-   в отдельном терминале запустить celery:
 
     celery -A config worker -l INFO -P eventlet
     celery -A config worker -l INFO

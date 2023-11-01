@@ -4,4 +4,4 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 python3 manage.py migrate
 python3 manage.py collectstatic --noinput
-celery -A config.celery worker --beat --loglevel=info -D
+celery -A config.celery flower worker --beat --loglevel=info -D
